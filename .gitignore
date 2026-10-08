@@ -1,0 +1,18 @@
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Eval outputs and caches (baselines/ is committed on purpose)
+runs/
+.cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
