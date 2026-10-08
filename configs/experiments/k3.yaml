@@ -1,0 +1,7 @@
+# Example experiment: the baseline, but the LLM sees 3 retrieved chunks instead of 5.
+# One file per experiment. Override only what differs; everything else comes from the baseline.
+extends: ../baseline.yaml
+name: k3
+
+retrieval:
+  k: 3
