@@ -1,0 +1,29 @@
+# The reference system. Experiment configs in configs/experiments/ start with
+#   extends: ../baseline.yaml
+# and override only what differs. Owned by WS3 (feat/generation).
+# Changing this file changes the baseline, so the PR must include a compare.md.
+name: baseline
+system: rag
+corpus_dir: data/corpus/docs
+
+chunking:
+  size_words: 300
+  overlap_words: 50
+
+retrieval:
+  method: bm25 # bm25 | dense | hybrid
+  k: 5
+  embed_model: nomic-embed-text # used by dense and hybrid
+
+abstention:
+  min_score: null # retrieval-score gate; tune it on the dev split with `deskrag eval sweep`
+
+llm:
+  model: llama3.2:3b # placeholder until the Day-1 bake-off; pin the exact tag you pick
+  temperature: 0.0
+  seed: 42
+  num_ctx: 4096
+  max_tokens: 512
+  think: false
+
+prompt_version: v1

@@ -1,0 +1,8 @@
+# Canned FakeRAGSystem over data/samples: lets the eval harness run without Ollama.
+name: fake
+system: fake
+corpus_dir: data/samples/corpus
+
+retrieval:
+  method: fake
+  k: 3
