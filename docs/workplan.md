@@ -7,7 +7,7 @@ Due ≈ **Thu Oct 29** (shift the dates if that changes). Design: [design.md](de
 | WS | Branch | Owner | Notes |
 |---|---|---|---|
 | WS1 Data | `feat/data` | | no GPU needed; leads the case-writing drive |
-| WS2 Retrieval | `feat/retrieval` | | light hardware |
+| WS2 Retrieval | `feat/retrieval` | Koshish Pangeni | light hardware |
 | WS3 Generation | `feat/generation` | | **strongest laptop**: becomes the reference machine for official runs |
 | WS4 Eval metrics | `feat/eval-metrics` | | no GPU needed; integration owner for M1 |
 | WS5 Regression + CI | `feat/regression-ci` | | no GPU needed; integration owner for M2 |
