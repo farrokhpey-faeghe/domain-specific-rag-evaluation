@@ -1,0 +1,120 @@
+flag	words	section	title	final_url	requested_url
+OK	864	IT	Multi-Factor Authentication Setup	https://www.utoledo.edu/it/service-catalog/accounts/mfa-setup-azure/mfa-setup-azure.html	https://www.utoledo.edu/it/service-catalog/accounts/mfa-setup-azure/mfa-setup-azure.html
+OK	95	IT	Legal Name Change	https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html	https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html
+OK	158	IT	Employee Affiliate Account Request	https://www.utoledo.edu/it/service-catalog/accounts/affiliate-request/affiliate-request.html	https://www.utoledo.edu/it/service-catalog/accounts/affiliate-request/affiliate-request.html
+THIN	5	IT	Wi-Fi Connectivity	https://www.utoledo.edu/it/service-catalog/networks/wifi-connectivity/	https://www.utoledo.edu/it/service-catalog/networks/wifi-connectivity/index.html
+OK	297	IT	VPN Instructions	https://www.utoledo.edu/it/security/vpn/vpn-instructions.html	https://www.utoledo.edu/it/security/vpn/vpn-instructions.html
+THIN	15	IT	VPN	https://www.utoledo.edu/it/service-catalog/networks/vpn/	https://www.utoledo.edu/it/service-catalog/networks/vpn/index.html
+OK	157	IT	OneDrive	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/OneDrive.html	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/OneDrive.html
+OK	149	IT	Microsoft Teams	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/Teams.html	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/Teams.html
+OK	491	IT	Outlook	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/outlook.html	https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/outlook.html
+THIN	50	IT	Printing, Scanning, and Faxing	https://www.utoledo.edu/it/service-catalog/devices-and-printing/printing-scanning-faxing/	https://www.utoledo.edu/it/service-catalog/devices-and-printing/printing-scanning-faxing/index.html
+THIN	33	IT	Computers	https://www.utoledo.edu/it/service-catalog/devices-and-printing/computer/	https://www.utoledo.edu/it/service-catalog/devices-and-printing/computer/index.html
+OK	89	IT	Connecting to the Virtual Lab	https://www.utoledo.edu/it/vlab/	https://www.utoledo.edu/it/vlab
+THIN	10	IT	Security Policy &amp; Compliance	https://www.utoledo.edu/it/service-catalog/security/policy-compliance/	https://www.utoledo.edu/it/service-catalog/security/policy-compliance
+THIN	8	IT	Service Incident Response	https://www.utoledo.edu/it/service-catalog/security/incident-response/	https://www.utoledo.edu/it/service-catalog/security/incident-response
+THIN	8	IT	Security Education	https://www.utoledo.edu/it/service-catalog/security/security-education/	https://www.utoledo.edu/it/service-catalog/security/security-education
+THIN	17	IT	INFORMATION TECHNOLOGY	https://www.utoledo.edu/it/frequently-asked-questions/	https://www.utoledo.edu/it/frequently-asked-questions/
+THIN	7	IT	VPN Request for Faculty and staff only	https://www.utoledo.edu/it/webforms/vpn-request.html	https://www.utoledo.edu/it/webforms/vpn-request.html
+OK	529	Registrar	FERPA and Confidentiality	https://www.utoledo.edu/offices/registrar/FERPA_confident.html	https://www.utoledo.edu/offices/registrar/FERPA_confident.html
+OK	874	Registrar	Final Exam Schedule	https://www.utoledo.edu/offices/registrar/exam_schedules.html	https://www.utoledo.edu/offices/registrar/exam_schedules.html
+OK	181	Registrar	Forms	https://www.utoledo.edu/offices/registrar/forms.html	https://www.utoledo.edu/offices/registrar/forms.html
+OK	475	Registrar	Graduation Application Deadlines	https://www.utoledo.edu/offices/registrar/graduation_app_deadlines.html	https://www.utoledo.edu/offices/registrar/graduation_app_deadlines.html
+OK	658	Registrar	Ohio In-State Residency	https://www.utoledo.edu/offices/registrar/residency/	https://www.utoledo.edu/offices/registrar/residency/
+OK	1239	Registrar	Advanced Placement (AP) Credit	https://www.utoledo.edu/offices/registrar/student_records/advan_credits.html	https://www.utoledo.edu/offices/registrar/student_records/advan_credits.html
+OK	380	Registrar	Enrollment & Degree Verifications	https://www.utoledo.edu/offices/registrar/student_records/enrollment_verification.html	https://www.utoledo.edu/offices/registrar/student_records/enrollment_verification.html
+OK	241	Registrar	Legal Name Change	https://www.utoledo.edu/offices/registrar/student_records/name_change.html	https://www.utoledo.edu/offices/registrar/student_records/name_change.html
+OK	378	Registrar	Preferred First Name	https://www.utoledo.edu/offices/registrar/student_records/preferred_first_name.html	https://www.utoledo.edu/offices/registrar/student_records/preferred_first_name.html
+THIN	35	Registrar	Student Records	https://www.utoledo.edu/offices/registrar/student_records/	https://www.utoledo.edu/offices/registrar/student_records/index.html
+OK	239	Registrar	Digital Diplomas and Certificates	https://www.utoledo.edu/offices/registrar/cediploma/	https://www.utoledo.edu/offices/registrar/cediploma/
+THIN	39	Registrar	Schedule of Classes	https://www.utoledo.edu/offices/registrar/sch_classes.html	https://www.utoledo.edu/offices/registrar/sch_classes.html
+OK	2620	FinancialAid	Financial Aid Cost of Attendance	https://www.utoledo.edu/financialaid/cost-of-attendance/	https://www.utoledo.edu/financialaid/cost-of-attendance/
+OK	341	FinancialAid	The Verification Process	https://www.utoledo.edu/financialaid/fafsa/verification/	https://www.utoledo.edu/financialaid/fafsa/verification/
+OK	239	FinancialAid	Grants	https://www.utoledo.edu/financialaid/grants/	https://www.utoledo.edu/financialaid/grants/
+OK	340	FinancialAid	Loans	https://www.utoledo.edu/financialaid/loans/	https://www.utoledo.edu/financialaid/loans/
+OK	1580	FinancialAid	Maintaining Aid	https://www.utoledo.edu/financialaid/maintain-aid/	https://www.utoledo.edu/financialaid/maintain-aid/
+OK	1575	FinancialAid	Satisfactory Academic Progress (SAP)	https://www.utoledo.edu/financialaid/maintain-aid/satisfactory-academic-progress/	https://www.utoledo.edu/financialaid/maintain-aid/satisfactory-academic-progress/
+THIN	35	FinancialAid	Scholarship Terms and Conditions	https://www.utoledo.edu/financialaid/scholarships/termsandconditions/	https://www.utoledo.edu/financialaid/scholarships/termsandconditions/
+OK	195	FinancialAid	Scholarship Essay Tips	https://www.utoledo.edu/financialaid/scholarships/scholarshipessaytips.html	https://www.utoledo.edu/financialaid/scholarships/scholarshipessaytips.html
+OK	347	FinancialAid	Financial Literacy and Money Management Tools	https://www.utoledo.edu/financialaid/financial-literacy.html	https://www.utoledo.edu/financialaid/financial-literacy.html
+OK	274	FinancialAid	Rocket Aid	https://www.utoledo.edu/financialaid/rocket-aid/	https://www.utoledo.edu/financialaid/rocket-aid/
+OK	493	FinancialAid	Engineering Co-Ops and Financial Aid	https://www.utoledo.edu/financialaid/accept-aid/engineering-co-ops.html	https://www.utoledo.edu/financialaid/accept-aid/engineering-co-ops.html
+OK	244	FinancialAid	FAFSA Timeline	https://www.utoledo.edu/financialaid/graduate/fafsa/	https://www.utoledo.edu/financialaid/graduate/fafsa/
+OK	438	FinancialAid	Scholarships	https://www.utoledo.edu/financialaid/graduate/types-of-aid/	https://www.utoledo.edu/financialaid/graduate/types-of-aid/
+OK	374	FinancialAid	Graduate or Professional Student	https://www.utoledo.edu/financialaid/graduate/maintain-aid/	https://www.utoledo.edu/financialaid/graduate/maintain-aid/
+THIN	78	FinancialAid	Graduate or Professional Student	https://www.utoledo.edu/financialaid/graduate/estimate-costs/	https://www.utoledo.edu/financialaid/graduate/estimate-costs/
+OK	193	FinancialAid	Financial Aid Resources	https://www.utoledo.edu/financialaid/resources/	https://www.utoledo.edu/financialaid/resources/
+OK	1363	FinancialAid	International Student Scholarships	https://www.utoledo.edu/financialaid/scholarships/international/	https://www.utoledo.edu/financialaid/scholarships/international/index.html
+OK	167	StudentAccounts	Office of the Treasurer	https://www.utoledo.edu/offices/treasurer/	https://www.utoledo.edu/offices/treasurer/
+OK	899	StudentAccounts	Payment Options	https://www.utoledo.edu/offices/treasurer/payment-options/	https://www.utoledo.edu/offices/treasurer/payment-options/
+OK	108	StudentAccounts	I am...	https://www.utoledo.edu/offices/treasurer/tuition/	https://www.utoledo.edu/offices/treasurer/tuition/
+OK	1054	StudentAccounts	Fall Semester 2026	https://www.utoledo.edu/offices/treasurer/tuition/DatesFall.html	https://www.utoledo.edu/offices/treasurer/tuition/DatesFall.html
+OK	3185	StudentAccounts	2026-27 UNDERGRADUATE TUITION	https://www.utoledo.edu/offices/treasurer/tuition/undergraduate/	https://www.utoledo.edu/offices/treasurer/tuition/undergraduate/
+SOFT	33	StudentAccounts	A to Z List	https://www.utoledo.edu/offices/treasurer/tuition/guarantee/four-plus.html	https://www.utoledo.edu/offices/treasurer/tuition/guarantee/four-plus.html
+OK	173	StudentAccounts	Special Accounts	https://www.utoledo.edu/offices/treasurer/collections.html	https://www.utoledo.edu/offices/treasurer/collections.html
+OK	400	StudentAccounts	New Beginnings Debt Forgiveness Program	https://www.utoledo.edu/offices/treasurer/new-beginnings/	https://www.utoledo.edu/offices/treasurer/new-beginnings/
+OK	524	StudentAccounts	Student Forms and Information	https://www.utoledo.edu/offices/treasurer/StudentChecklist.html	https://www.utoledo.edu/offices/treasurer/StudentChecklist.html
+OK	478	StudentAccounts	Make an appointment	https://www.utoledo.edu/offices/treasurer/financial-wellness/	https://www.utoledo.edu/offices/treasurer/financial-wellness/
+OK	108	Housing	Mccomas Village	https://www.utoledo.edu/studentaffairs/reslife/halls/mccomas-village/	https://www.utoledo.edu/studentaffairs/reslife/halls/mccomas-village/index.html
+OK	276	Housing	Ottawa house east and West	https://www.utoledo.edu/studentaffairs/reslife/halls/ottawa-east-and-west/	https://www.utoledo.edu/studentaffairs/reslife/halls/ottawa-east-and-west/index.html
+OK	255	Housing	Parks Tower	https://www.utoledo.edu/studentaffairs/reslife/halls/parks-tower/	https://www.utoledo.edu/studentaffairs/reslife/halls/parks-tower/index.html
+OK	162	Housing	Presidents hall	https://www.utoledo.edu/studentaffairs/reslife/halls/presidents-hall/	https://www.utoledo.edu/studentaffairs/reslife/halls/presidents-hall/index.html
+OK	243	Housing	What to Bring to Campus	https://www.utoledo.edu/studentaffairs/reslife/packing.html	https://www.utoledo.edu/studentaffairs/reslife/packing.html
+THIN	56	Housing	Specialized Living Communities	https://www.utoledo.edu/studentaffairs/reslife/livinglearning.html	https://www.utoledo.edu/studentaffairs/reslife/livinglearning.html
+OK	273	Housing	On Campus Mailing Addresses	https://www.utoledo.edu/studentaffairs/reslife/addresses.html	https://www.utoledo.edu/studentaffairs/reslife/addresses.html
+OK	489	Housing	University Housing Contract Cancellation	https://www.utoledo.edu/studentaffairs/reslife/uhcontractcancellation.html	https://www.utoledo.edu/studentaffairs/reslife/uhcontractcancellation.html
+OK	615	Library	Carlson Library Reservation Information	https://www.utoledo.edu/library/webforms/carlson-library-reservation-information.html	https://www.utoledo.edu/library/webforms/carlson-library-reservation-information.html
+OK	733	Library	University Libraries Event Guidelines	https://www.utoledo.edu/library/webforms/university-libraries-event-guidelines.html	https://www.utoledo.edu/library/webforms/university-libraries-event-guidelines.html
+OK	338	Library	University Libraries Reservations FAQ	https://www.utoledo.edu/library/webforms/university-libraries-reservations-faq.html	https://www.utoledo.edu/library/webforms/university-libraries-reservations-faq.html
+OK	166	Library	Welcome to Mulford Library	https://www.utoledo.edu/library/mulford/	https://www.utoledo.edu/library/mulford/index.html
+OK	218	Library	Mulford Hours of Operation	https://www.utoledo.edu/library/mulford/hours.html	https://www.utoledo.edu/library/mulford/hours.html
+OK	195	Library	William S. Carlson Library - Main Campus	https://www.utoledo.edu/library/carlson/	https://www.utoledo.edu/library/carlson/index.html
+OK	473	Library	Welcome to the Canaday Center	https://www.utoledo.edu/library/canaday/	https://www.utoledo.edu/library/canaday/index.html
+OK	135	Library	Staff Directory	https://www.utoledo.edu/library/info/dir/NewDirectory.html	https://www.utoledo.edu/library/info/dir/NewDirectory.html
+OK	896	Library	Borrowing FAQ - Borrowing Library Materials (Circulation) - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/borrowing	https://libguides.utoledo.edu/borrowing
+OK	477	Library	Interlibrary Loan - Interlibrary Loan (ILL) - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/ill	https://libguides.utoledo.edu/ill
+OK	450	Library	Finding & Using Course Reserves - Course Reserves - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/reserves	https://libguides.utoledo.edu/reserves
+OK	456	Library	Textbooks - Textbooks - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/textbooks	https://libguides.utoledo.edu/textbooks
+OK	216	Accessibility	Mission of The Office Of Accessibility and Disability Resources	https://www.utoledo.edu/offices/accessibility-disability/	https://www.utoledo.edu/offices/accessibility-disability/
+OK	513	Accessibility	Students	https://www.utoledo.edu/offices/accessibility-disability/student/	https://www.utoledo.edu/offices/accessibility-disability/student/index.html
+SOFT	33	Accessibility	A to Z List	https://www.utoledo.edu/offices/accessibility-disability/forms	https://www.utoledo.edu/offices/accessibility-disability/forms/index.html
+OK	783	Counseling	Crisis Resources	https://www.utoledo.edu/studentaffairs/counseling/crisisresources.html	https://www.utoledo.edu/studentaffairs/counseling/crisisresources.html
+OK	97	Counseling	Self-Help Resources	https://www.utoledo.edu/studentaffairs/counseling/selfhelp/	https://www.utoledo.edu/studentaffairs/counseling/selfhelp/
+OK	274	Counseling	Schedule an Appointment	https://www.utoledo.edu/studentaffairs/counseling/singlesession.html	https://www.utoledo.edu/studentaffairs/counseling/singlesession.html
+OK	576	Counseling	STAR Suicide prevention awareness and training	https://www.utoledo.edu/studentaffairs/counseling/star/	https://www.utoledo.edu/studentaffairs/counseling/star/
+OK	205	Counseling	Care Where You Are	https://www.utoledo.edu/studentaffairs/counseling/mantra-health/	https://www.utoledo.edu/studentaffairs/counseling/mantra-health/
+OK	85	Conduct	Mission, Vision, and Values	https://www.utoledo.edu/studentaffairs/conduct/	https://www.utoledo.edu/studentaffairs/conduct/index.html
+THIN	53	StudentAffairs	Dean Of Students	https://www.utoledo.edu/studentaffairs/dos/	https://www.utoledo.edu/studentaffairs/dos/
+THIN	20	StudentAffairs	CASE	https://www.utoledo.edu/studentaffairs/case/	https://www.utoledo.edu/studentaffairs/case/
+OK	829	StudentAffairs	Welcome to Student Legal Services!	https://www.utoledo.edu/studentaffairs/studentlegalservices/	https://www.utoledo.edu/studentaffairs/studentlegalservices/
+THIN	75	BasicNeeds	Food Pantry Eligibility	https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html	https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html
+OK	206	TitleIX	Policies	https://www.utoledo.edu/title-ix/policies.html	https://www.utoledo.edu/title-ix/policies.html
+OK	521	TitleIX	Get Help with Confidential Resources	https://www.utoledo.edu/title-ix/sexual-misconduct/	https://www.utoledo.edu/title-ix/sexual-misconduct/
+OK	236	TitleIX	On & Off Campus Resources	https://www.utoledo.edu/title-ix/resources.html	https://www.utoledo.edu/title-ix/resources.html
+OK	137	Career	Rocket Career Center	https://www.utoledo.edu/career/students/	https://www.utoledo.edu/career/students/
+OK	225	Career	Job Search	https://www.utoledo.edu/career/students/job-search.html	https://www.utoledo.edu/career/students/job-search.html
+OK	1107	Career	The Career Development Pathway	https://www.utoledo.edu/career/pathway/	https://www.utoledo.edu/career/pathway/
+OK	923	Career	Recruiting Policies	https://www.utoledo.edu/career/employers/policies.html	https://www.utoledo.edu/career/employers/policies.html
+OK	597	Orientation	Welcome New Rockets!	https://www.utoledo.edu/orientation/transfer/	https://www.utoledo.edu/orientation/transfer/
+OK	177	Orientation	100% Online Degree Students	https://www.utoledo.edu/orientation/online-students.html	https://www.utoledo.edu/orientation/online-students.html
+OK	305	International	F-1 Student Journey: Admission to Post Completion	https://www.utoledo.edu/cisp/international/	https://www.utoledo.edu/cisp/international/
+OK	1168	International	Welcome to Education Abroad!	https://www.utoledo.edu/cisp/studyabroad/	https://www.utoledo.edu/cisp/studyabroad/
+OK	1049	International	Scholarships and Grants	https://www.utoledo.edu/cisp/studyabroad/funding.html	https://www.utoledo.edu/cisp/studyabroad/funding.html
+OK	512	International	Passport Information and Photos	https://www.utoledo.edu/cisp/passport/	https://www.utoledo.edu/cisp/passport/index.html
+OK	486	Testing	Placement Testing	https://www.utoledo.edu/centers/testingcenter/main/placement.html	https://www.utoledo.edu/centers/testingcenter/main/placement.html
+OK	224	Testing	UToledo Testing Services	https://www.utoledo.edu/centers/testingcenter/main/	https://www.utoledo.edu/centers/testingcenter/main/
+OK	100	Transportation	TransLoc shuttle Stops	https://www.utoledo.edu/offices/auxiliary/bus-services/busstop.html	https://www.utoledo.edu/offices/auxiliary/bus-services/busstop.html
+OK	280	Transportation	Inclement weather & Lucas County Snow Emergency Levels	https://www.utoledo.edu/offices/auxiliary/bus-services/inclementweather.html	https://www.utoledo.edu/offices/auxiliary/bus-services/inclementweather.html
+OK	105	Transportation	Art Museum Shuttle Times - Gold Loop	https://www.utoledo.edu/offices/auxiliary/bus-services/artmuseuntimes.html	https://www.utoledo.edu/offices/auxiliary/bus-services/artmuseuntimes.html
+OK	88	Transportation	UTMC (Health Science Campus) shuttle Times - Gold Loop	https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html	https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html
+OK	251	RocketCard	Rocket Card	https://www.utoledo.edu/rocketcard/	https://www.utoledo.edu/rocketcard/
+OK	266	RocketCard	Rocket Mobile ID	https://www.utoledo.edu/rocketcard/rocket-mobile-id/	https://www.utoledo.edu/rocketcard/rocket-mobile-id/index.html
+OK	171	Safety	Hospital Security	https://www.utoledo.edu/publicsafety/hospitalsecurity/	https://www.utoledo.edu/publicsafety/hospitalsecurity/index.html
+OK	1067	Recreation	Memberships	https://www.utoledo.edu/studentaffairs/rec/SRC_Membership.html	https://www.utoledo.edu/studentaffairs/rec/SRC_Membership.html
+OK	440	Recreation	UToledo Rec Aquatic Center	https://www.utoledo.edu/studentaffairs/rec/aquatics/	https://www.utoledo.edu/studentaffairs/rec/aquatics/
+OK	174	FinancialAid	Health Science Campus Office of Financial Aid	https://www.utoledo.edu/financialaid/hsc/	https://www.utoledo.edu/financialaid/hsc/index.html
+OK	351	FinancialAid	Financial Aid 101 for Parents and Families	https://www.utoledo.edu/financialaid/parents-and-family/	https://www.utoledo.edu/financialaid/parents-and-family/
+THIN	3	Registrar	Diploma Address Change	https://www.utoledo.edu/offices/registrar/webforms/diplomaaddressupdate.html	https://www.utoledo.edu/offices/registrar/webforms/diplomaaddressupdate.html
+OK	227	Counseling	Self-Care	https://www.utoledo.edu/studentaffairs/counseling/selfhelp/copingskills/selfcare.html	https://www.utoledo.edu/studentaffairs/counseling/selfhelp/copingskills/selfcare.html
+OK	264	Safety	Sexual Misconduct Prevention Education Programming	https://www.utoledo.edu/studentaffairs/saepp/	https://www.utoledo.edu/studentaffairs/saepp/
+THIN	53	Military	Military Service Center	https://www.utoledo.edu/military/	https://www.utoledo.edu/military/

@@ -1,0 +1,178 @@
+doc_id,url,section,status,http_status,final_url,robots,reason,title,chars
+it001,https://www.utoledo.edu/it/service-catalog/accounts/utad-password-reset/utad-password-reset.html,IT,ok,,https://www.utoledo.edu/it/service-catalog/accounts/utad-password-reset/utad-password-reset.html,not_checked,skip_existing,UTAD Password Reset,1822
+it002,https://www.utoledo.edu/it/service-catalog/it-support/help-desk/,IT,ok,,https://www.utoledo.edu/it/service-catalog/it-support/help-desk/,not_checked,skip_existing,Help Desk,1221
+it003,https://www.utoledo.edu/it/service-catalog/,IT,ok,,https://www.utoledo.edu/it/service-catalog/,not_checked,skip_existing,INFORMATION TECHNOLOGY,590
+it004,https://www.utoledo.edu/it/service-catalog/networks/,IT,ok,,https://www.utoledo.edu/it/service-catalog/networks/,not_checked,skip_existing,Networks,117
+it005,https://www.utoledo.edu/it/desktop-support/index.html,IT,ok,,https://www.utoledo.edu/it/desktop-support/,not_checked,skip_existing,Desktop Support,401
+it006,https://www.utoledo.edu/it/service-catalog/networks/vpn/vpn-form.html,IT,ok,,https://www.utoledo.edu/it/service-catalog/networks/vpn/vpn-form.html,not_checked,skip_existing,VPN Access Form,1221
+it007,https://www.utoledo.edu/it/service-catalog/accounts/,IT,ok,,https://www.utoledo.edu/it/service-catalog/accounts/,not_checked,skip_existing,Account Management & Authentication,240
+it008,https://www.utoledo.edu/it/service-catalog/devices-and-printing/,IT,ok,,https://www.utoledo.edu/it/service-catalog/devices-and-printing/,not_checked,skip_existing,Device Support & Printing,385
+it009,https://www.utoledo.edu/it/service-catalog/it-support/,IT,ok,,https://www.utoledo.edu/it/service-catalog/it-support/,not_checked,skip_existing,IT Support,176
+it010,https://www.utoledo.edu/it/service-catalog/microsoft365/,IT,ok,,https://www.utoledo.edu/it/service-catalog/microsoft365/,not_checked,skip_existing,Microsoft 365,342
+it011,https://www.utoledo.edu/it/service-catalog/security/,IT,ok,,https://www.utoledo.edu/it/service-catalog/security/,not_checked,skip_existing,IT Security,191
+reg001,https://www.utoledo.edu/offices/registrar/,Registrar,ok,,https://www.utoledo.edu/offices/registrar/,not_checked,skip_existing,Office of the Registrar,326
+reg002,https://www.utoledo.edu/offices/registrar/registration-dates.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/registration-dates.html,not_checked,skip_existing,Registration Dates,2032
+reg003,https://www.utoledo.edu/offices/registrar/add-drop-withdraw/,Registrar,ok,,https://www.utoledo.edu/offices/registrar/add-drop-withdraw/,not_checked,skip_existing,Add/Drop/Withdraw Deadlines,677
+reg004,https://www.utoledo.edu/offices/registrar/transcripts.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/transcripts.html,not_checked,skip_existing,How to Order Transcripts,2025
+reg005,https://www.utoledo.edu/offices/registrar/frequently-asked-questions.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/frequently-asked-questions.html,not_checked,skip_existing,Registration Frequently Asked Questions,8888
+reg006,https://www.utoledo.edu/offices/registrar/commencement.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/commencement.html,not_checked,skip_existing,Commencement,8937
+reg007,https://www.utoledo.edu/offices/registrar/self-service-registration.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/self-service-registration.html,not_checked,skip_existing,Register for Classes Using Banner Self-Service,10649
+reg008,https://www.utoledo.edu/offices/registrar/unofficial_transcripts.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/unofficial_transcripts.html,not_checked,skip_existing,Unofficial Transcripts,1581
+reg009,https://www.utoledo.edu/offices/registrar/graduation.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/graduation.html,not_checked,skip_existing,Graduation,2848
+reg010,https://www.utoledo.edu/offices/registrar/diplomas.html,Registrar,ok,,https://www.utoledo.edu/offices/registrar/diplomas.html,not_checked,skip_existing,Diplomas and Certificates,2903
+fa001,https://www.utoledo.edu/financialaid/undergraduate/fafsa/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/undergraduate/fafsa/,not_checked,skip_existing,FAFSA Tips,3160
+fa002,https://www.utoledo.edu/financialaid/frequently-asked-questions/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/frequently-asked-questions/,not_checked,skip_existing,Financial Aid Frequently Asked Questions,10426
+fa003,https://www.utoledo.edu/financialaid/accept-aid/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/accept-aid/,not_checked,skip_existing,How to accept and understand your financial aid,15253
+fa004,https://www.utoledo.edu/financialaid/understanding-aid/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/understanding-aid/,not_checked,skip_existing,Understanding Your Financial Aid Offer,3148
+fa005,https://www.utoledo.edu/financialaid/scholarships/undergraduate/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/scholarships/undergraduate/,not_checked,skip_existing,Scholarships,10612
+fa006,https://www.utoledo.edu/financialaid/scholarships/current/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/scholarships/current/,not_checked,skip_existing,Current Undergraduate Scholarships,8375
+fa007,https://www.utoledo.edu/financialaid/scholarships/transfer/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/scholarships/transfer/,not_checked,skip_existing,New Transfer or Adult Undergraduate Scholarships,8637
+fa008,https://www.utoledo.edu/financialaid/undergraduate/types-of-aid/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/undergraduate/types-of-aid/,not_checked,skip_existing,Scholarships,3452
+fa009,https://www.utoledo.edu/financialaid/current/types-of-aid/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/current/types-of-aid/,not_checked,skip_existing,Scholarships,2283
+fa010,https://www.utoledo.edu/financialaid/current/accept-aid/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/current/accept-aid/,not_checked,skip_existing,Current Undergraduate Student,3578
+fa011,https://www.utoledo.edu/financialaid/2026-27-financial-aid-changes/index.html,FinancialAid,ok,,https://www.utoledo.edu/financialaid/2026-27-financial-aid-changes/,not_checked,skip_existing,2026-27 Changes to Federal Financial Aid,5010
+fa012,https://www.utoledo.edu/financialaid/undergraduate/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/undergraduate/,not_checked,skip_existing,Your Financial Aid How-To Guide,1181
+fa013,https://www.utoledo.edu/financialaid/graduate/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/graduate/,not_checked,skip_existing,Your Financial Aid How-To Guide,1148
+fa014,https://www.utoledo.edu/financialaid/international/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/international/,not_checked,skip_existing,Your Financial Aid How-To Guide,922
+fa015,https://www.utoledo.edu/financialaid/fafsa/,FinancialAid,ok,,https://www.utoledo.edu/financialaid/fafsa/,not_checked,skip_existing,Step-By-Step FAFSA Guide: How to Apply for Financial Aid,3297
+fa016,https://www.utoledo.edu/financialaid/scholarships/index.html,FinancialAid,ok,,https://www.utoledo.edu/financialaid/scholarships/,not_checked,skip_existing,Scholarships,5450
+housing001,https://www.utoledo.edu/studentaffairs/reslife/,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/,not_checked,skip_existing,Welcome Home,1399
+housing002,https://www.utoledo.edu/studentaffairs/reslife/halls/,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/halls/,not_checked,skip_existing,Housing Options,829
+housing003,https://www.utoledo.edu/studentaffairs/reslife/application.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/application.html,not_checked,skip_existing,New Student Housing Application,6265
+housing004,https://www.utoledo.edu/studentaffairs/reslife/returnerapplication.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/returnerapplication.html,not_checked,skip_existing,Current Student Application Process,4981
+housing005,https://www.utoledo.edu/studentaffairs/reslife/greekapplication.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/greekapplication.html,not_checked,skip_existing,Greek Village Housing Application,3239
+housing006,https://www.utoledo.edu/studentaffairs/reslife/cancelfees.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/cancelfees.html,not_checked,skip_existing,Cancellation Fees,2587
+housing007,https://www.utoledo.edu/studentaffairs/reslife/living-guide.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/living-guide.html,not_checked,skip_existing,Living Guide,44462
+housing008,https://www.utoledo.edu/studentaffairs/reslife/movein.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/movein.html,not_checked,skip_existing,Fall 2026 Move-In,3002
+housing009,https://www.utoledo.edu/studentaffairs/reslife/forms.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/forms.html,not_checked,skip_existing,residence life Forms,284
+housing010,https://www.utoledo.edu/studentaffairs/reslife/residency-requirement.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/residency-requirement.html,not_checked,skip_existing,2 Year Residency Requirement,6070
+housing011,https://www.utoledo.edu/studentaffairs/reslife/Contract.html,Housing,ok,,https://www.utoledo.edu/studentaffairs/reslife/Contract.html,not_checked,skip_existing,Housing Contract,27710
+library001,https://www.utoledo.edu/library/info/hours.html,Library,ok,,https://www.utoledo.edu/library/info/hours.html,not_checked,skip_existing,University Libraries Hours of Service,2002
+library002,https://www.utoledo.edu/library/serv/,Library,ok,,https://www.utoledo.edu/library/serv/,not_checked,skip_existing,Services provided by the University Libraries,296
+library003,https://www.utoledo.edu/library/serv/fac.html,Library,ok,,https://www.utoledo.edu/library/serv/fac.html,not_checked,skip_existing,Services for Faculty Members,6259
+library004,https://www.utoledo.edu/library/,Library,ok,,https://www.utoledo.edu/library/,not_checked,skip_existing,Welcome to the University of Toledo Libraries,2759
+library005,https://www.utoledo.edu/library/webforms/roomres.html,Library,ok,,https://www.utoledo.edu/library/webforms/roomres.html,not_checked,skip_existing,Carlson Library Room Reservation Request,1084
+library006,https://www.utoledo.edu/library/imlookingfor.html,Library,ok,,https://www.utoledo.edu/library/imlookingfor.html,not_checked,skip_existing,I'm Looking For...,251
+library007,https://www.utoledo.edu/library/serv/grad.html,Library,ok,,https://www.utoledo.edu/library/serv/grad.html,not_checked,skip_existing,Services for Graduate Students,1207
+library008,https://www.utoledo.edu/library/serv/disabilities.html,Library,ok,,https://www.utoledo.edu/library/serv/disabilities.html,not_checked,skip_existing,Accessibility Services for Patrons with Disabilities,4238
+library009,https://www.utoledo.edu/library/tech/remote.html,Library,ok,,https://www.utoledo.edu/library/tech/remote.html,not_checked,skip_existing,Off-Campus Access To Electronic Resources,1878
+dining001,https://www.utoledo.edu/mealplans/,Dining,ok,,https://www.utoledo.edu/mealplans/,not_checked,skip_existing,Meal Plans and Campus Dining,14557
+dining002,https://www.utoledo.edu/mealplans/dining-agreement/,Dining,ok,,https://www.utoledo.edu/mealplans/dining-agreement/,not_checked,skip_existing,Dining Agreement 2026-27,6799
+acct001,https://www.utoledo.edu/offices/treasurer/housingandmealplans/,StudentAccounts,ok,,https://www.utoledo.edu/offices/treasurer/housingandmealplans/,not_checked,skip_existing,2026 - 2027 Housing and Meal Plans,6404
+acct002,https://www.utoledo.edu/offices/treasurer/tuition/guarantee/faq.html,StudentAccounts,ok,,https://www.utoledo.edu/offices/treasurer/tuition/guarantee/faq.html,not_checked,skip_existing,Toledo Tuition Guarantee FAQs,22881
+parking001,https://www.utoledo.edu/parkingservices/,Parking,ok,,https://www.utoledo.edu/parkingservices/,not_checked,skip_existing,Parking Services,1149
+parking002,https://www.utoledo.edu/offices/auxiliary/bus-services/,Transportation,ok,,https://www.utoledo.edu/offices/auxiliary/bus-services/,not_checked,skip_existing,Lift Shuttle,2931
+parking003,https://www.utoledo.edu/offices/auxiliary/electric-scooters/,Transportation,ok,,https://www.utoledo.edu/offices/auxiliary/electric-scooters/,not_checked,skip_existing,Get to Know Your VEO Scooter,1103
+parking004,https://www.utoledo.edu/campus/directions/,Campus,ok,,https://www.utoledo.edu/campus/directions/,not_checked,skip_existing,Main Campus,492
+counsel001,https://www.utoledo.edu/studentaffairs/counseling/,Counseling,ok,,https://www.utoledo.edu/studentaffairs/counseling/,not_checked,skip_existing,Care Where You Are,3611
+health001,https://www.utoledo.edu/health/,Health,ok,,https://www.utoledo.edu/health/,not_checked,skip_existing,University of Toledo Health and Wellness Programs,1387
+career001,https://www.utoledo.edu/career/,Career,ok,,https://www.utoledo.edu/career/,not_checked,skip_existing,Rocket Career Center,511
+safety001,https://www.utoledo.edu/publicsafety/,Safety,ok,,https://www.utoledo.edu/publicsafety/,not_checked,skip_existing,Office of Public Safety,1134
+safety002,https://www.utoledo.edu/publicsafety/utalert/,Safety,ok,,https://www.utoledo.edu/publicsafety/utalert/,not_checked,skip_existing,UToledo Alert,1295
+card001,https://www.utoledo.edu/rocketcard/faq.html,RocketCard,ok,,https://www.utoledo.edu/rocketcard/faq.html,not_checked,skip_existing,Rocket Card FAQ's,8498
+titleix001,https://www.utoledo.edu/title-ix/,TitleIX,ok,,https://www.utoledo.edu/title-ix/,not_checked,skip_existing,What is Title IX,3826
+orient001,https://www.utoledo.edu/orientation/,Orientation,ok,,https://www.utoledo.edu/orientation/,not_checked,skip_existing,Get Ready for Orientation,1770
+commuter001,https://www.utoledo.edu/commuter/,Commuter,ok,,https://www.utoledo.edu/commuter/,not_checked,skip_existing,Off-Campus Student Services,962
+military001,https://www.utoledo.edu/military/,Military,ok,,https://www.utoledo.edu/military/,not_checked,skip_existing,Military Service Center,368
+intl001,https://www.utoledo.edu/cisp/,International,ok,,https://www.utoledo.edu/cisp/,not_checked,skip_existing,Discovering Worlds,791
+rec001,https://www.utoledo.edu/studentaffairs/rec/index.html,Recreation,ok,,https://www.utoledo.edu/studentaffairs/rec/,not_checked,skip_existing,Student Recreation Center (Main Campus),1427
+pantry001,https://www.utoledo.edu/studentaffairs/food-pantry/,BasicNeeds,ok,,https://www.utoledo.edu/studentaffairs/food-pantry/,not_checked,skip_existing,Food Pantries,945
+it012,https://www.utoledo.edu/it/service-catalog/accounts/mfa-setup-azure/mfa-setup-azure.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/accounts/mfa-setup-azure/mfa-setup-azure.html,allow,,Multi-Factor Authentication Setup,5350
+it013,https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html,allow,,Legal Name Change,663
+it014,https://www.utoledo.edu/it/service-catalog/accounts/affiliate-request/affiliate-request.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/accounts/affiliate-request/affiliate-request.html,allow,,Employee Affiliate Account Request,1061
+it015,https://www.utoledo.edu/it/security/vpn/vpn-instructions.html,IT,ok,200,https://www.utoledo.edu/it/security/vpn/vpn-instructions.html,allow,,VPN Instructions,1746
+it016,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/OneDrive.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/OneDrive.html,allow,,OneDrive,1015
+it017,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/Teams.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/Teams.html,allow,,Microsoft Teams,1012
+it018,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/outlook.html,IT,ok,200,https://www.utoledo.edu/it/service-catalog/communication-collaboration/collaboration-tools/outlook.html,allow,,Outlook,2986
+it019,https://www.utoledo.edu/it/vlab,IT,ok,200,https://www.utoledo.edu/it/vlab/,allow,,Connecting to the Virtual Lab,551
+reg011,https://www.utoledo.edu/offices/registrar/FERPA_confident.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/FERPA_confident.html,allow,,FERPA and Confidentiality,3589
+reg012,https://www.utoledo.edu/offices/registrar/exam_schedules.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/exam_schedules.html,allow,,Final Exam Schedule,3991
+reg013,https://www.utoledo.edu/offices/registrar/forms.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/forms.html,allow,,Forms,1329
+reg014,https://www.utoledo.edu/offices/registrar/graduation_app_deadlines.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/graduation_app_deadlines.html,allow,,Graduation Application Deadlines,3225
+reg015,https://www.utoledo.edu/offices/registrar/residency/,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/residency/,allow,,Ohio In-State Residency,4271
+reg016,https://www.utoledo.edu/offices/registrar/student_records/advan_credits.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/student_records/advan_credits.html,allow,,Advanced Placement (AP) Credit,8963
+reg017,https://www.utoledo.edu/offices/registrar/student_records/enrollment_verification.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/student_records/enrollment_verification.html,allow,,Enrollment & Degree Verifications,2707
+reg018,https://www.utoledo.edu/offices/registrar/student_records/name_change.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/student_records/name_change.html,allow,,Legal Name Change,1547
+reg019,https://www.utoledo.edu/offices/registrar/student_records/preferred_first_name.html,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/student_records/preferred_first_name.html,allow,,Preferred First Name,2285
+reg020,https://www.utoledo.edu/offices/registrar/cediploma/,Registrar,ok,200,https://www.utoledo.edu/offices/registrar/cediploma/,allow,,Digital Diplomas and Certificates,1609
+fa017,https://www.utoledo.edu/financialaid/cost-of-attendance/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/cost-of-attendance/,allow,,Financial Aid Cost of Attendance,17741
+fa018,https://www.utoledo.edu/financialaid/fafsa/verification/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/fafsa/verification/,allow,,The Verification Process,2126
+fa019,https://www.utoledo.edu/financialaid/grants/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/grants/,allow,,Grants,1518
+fa020,https://www.utoledo.edu/financialaid/loans/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/loans/,allow,,Loans,2105
+fa021,https://www.utoledo.edu/financialaid/maintain-aid/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/maintain-aid/,allow,,Maintaining Aid,9861
+fa022,https://www.utoledo.edu/financialaid/maintain-aid/satisfactory-academic-progress/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/maintain-aid/satisfactory-academic-progress/,allow,,Satisfactory Academic Progress (SAP),9764
+fa023,https://www.utoledo.edu/financialaid/scholarships/scholarshipessaytips.html,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/scholarships/scholarshipessaytips.html,allow,,Scholarship Essay Tips,1218
+fa024,https://www.utoledo.edu/financialaid/financial-literacy.html,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/financial-literacy.html,allow,,Financial Literacy and Money Management Tools,2291
+fa025,https://www.utoledo.edu/financialaid/rocket-aid/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/rocket-aid/,allow,,Rocket Aid,1892
+fa026,https://www.utoledo.edu/financialaid/accept-aid/engineering-co-ops.html,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/accept-aid/engineering-co-ops.html,allow,,Engineering Co-Ops and Financial Aid,2889
+fa027,https://www.utoledo.edu/financialaid/graduate/fafsa/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/graduate/fafsa/,allow,,FAFSA Timeline,1525
+fa028,https://www.utoledo.edu/financialaid/graduate/types-of-aid/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/graduate/types-of-aid/,allow,,Scholarships,2738
+fa029,https://www.utoledo.edu/financialaid/graduate/maintain-aid/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/graduate/maintain-aid/,allow,,Graduate or Professional Student,2313
+fa030,https://www.utoledo.edu/financialaid/resources/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/resources/,allow,,Financial Aid Resources,1290
+fa031,https://www.utoledo.edu/financialaid/scholarships/international/index.html,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/scholarships/international/,allow,,International Student Scholarships,8813
+acct003,https://www.utoledo.edu/offices/treasurer/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/,allow,,Office of the Treasurer,1182
+acct004,https://www.utoledo.edu/offices/treasurer/payment-options/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/payment-options/,allow,,Payment Options,5994
+acct005,https://www.utoledo.edu/offices/treasurer/tuition/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/tuition/,allow,,I am...,672
+acct006,https://www.utoledo.edu/offices/treasurer/tuition/DatesFall.html,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/tuition/DatesFall.html,allow,,Fall Semester 2026,6943
+acct007,https://www.utoledo.edu/offices/treasurer/tuition/undergraduate/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/tuition/undergraduate/,allow,,2026-27 UNDERGRADUATE TUITION,23255
+acct008,https://www.utoledo.edu/offices/treasurer/collections.html,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/collections.html,allow,,Special Accounts,1197
+acct009,https://www.utoledo.edu/offices/treasurer/new-beginnings/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/new-beginnings/,allow,,New Beginnings Debt Forgiveness Program,2566
+acct010,https://www.utoledo.edu/offices/treasurer/StudentChecklist.html,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/StudentChecklist.html,allow,,Student Forms and Information,3418
+acct011,https://www.utoledo.edu/offices/treasurer/financial-wellness/,StudentAccounts,ok,200,https://www.utoledo.edu/offices/treasurer/financial-wellness/,allow,,Make an appointment,3239
+housing012,https://www.utoledo.edu/studentaffairs/reslife/halls/mccomas-village/index.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/halls/mccomas-village/,allow,,Mccomas Village,743
+housing013,https://www.utoledo.edu/studentaffairs/reslife/halls/ottawa-east-and-west/index.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/halls/ottawa-east-and-west/,allow,,Ottawa house east and West,1818
+housing014,https://www.utoledo.edu/studentaffairs/reslife/halls/parks-tower/index.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/halls/parks-tower/,allow,,Parks Tower,1756
+housing015,https://www.utoledo.edu/studentaffairs/reslife/halls/presidents-hall/index.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/halls/presidents-hall/,allow,,Presidents hall,1151
+housing016,https://www.utoledo.edu/studentaffairs/reslife/packing.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/packing.html,allow,,What to Bring to Campus,1744
+housing017,https://www.utoledo.edu/studentaffairs/reslife/addresses.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/addresses.html,allow,,On Campus Mailing Addresses,1627
+housing018,https://www.utoledo.edu/studentaffairs/reslife/uhcontractcancellation.html,Housing,ok,200,https://www.utoledo.edu/studentaffairs/reslife/uhcontractcancellation.html,allow,,University Housing Contract Cancellation,3542
+library010,https://www.utoledo.edu/library/webforms/carlson-library-reservation-information.html,Library,ok,200,https://www.utoledo.edu/library/webforms/carlson-library-reservation-information.html,allow,,Carlson Library Reservation Information,4238
+library011,https://www.utoledo.edu/library/webforms/university-libraries-event-guidelines.html,Library,ok,200,https://www.utoledo.edu/library/webforms/university-libraries-event-guidelines.html,allow,,University Libraries Event Guidelines,4916
+library012,https://www.utoledo.edu/library/webforms/university-libraries-reservations-faq.html,Library,ok,200,https://www.utoledo.edu/library/webforms/university-libraries-reservations-faq.html,allow,,University Libraries Reservations FAQ,2184
+library013,https://www.utoledo.edu/library/mulford/index.html,Library,ok,200,https://www.utoledo.edu/library/mulford/,allow,,Welcome to Mulford Library,1175
+library014,https://www.utoledo.edu/library/mulford/hours.html,Library,ok,200,https://www.utoledo.edu/library/mulford/hours.html,allow,,Mulford Hours of Operation,1433
+library015,https://www.utoledo.edu/library/carlson/index.html,Library,ok,200,https://www.utoledo.edu/library/carlson/,allow,,William S. Carlson Library - Main Campus,1508
+library016,https://www.utoledo.edu/library/canaday/index.html,Library,ok,200,https://www.utoledo.edu/library/canaday/,allow,,Welcome to the Canaday Center,3012
+library017,https://www.utoledo.edu/library/info/dir/NewDirectory.html,Library,ok,200,https://www.utoledo.edu/library/info/dir/NewDirectory.html,allow,,Staff Directory,1029
+library018,https://libguides.utoledo.edu/borrowing,Library,ok,200,https://libguides.utoledo.edu/borrowing,allow,,Borrowing FAQ - Borrowing Library Materials (Circulation) - LibGuides at University of Toledo Libraries,5405
+library019,https://libguides.utoledo.edu/ill,Library,ok,200,https://libguides.utoledo.edu/ill,allow,,Interlibrary Loan - Interlibrary Loan (ILL) - LibGuides at University of Toledo Libraries,2937
+library020,https://libguides.utoledo.edu/reserves,Library,ok,200,https://libguides.utoledo.edu/reserves,allow,,Finding & Using Course Reserves - Course Reserves - LibGuides at University of Toledo Libraries,2711
+library021,https://libguides.utoledo.edu/textbooks,Library,ok,200,https://libguides.utoledo.edu/textbooks,allow,,Textbooks - Textbooks - LibGuides at University of Toledo Libraries,2835
+access001,https://www.utoledo.edu/offices/accessibility-disability/,Accessibility,ok,200,https://www.utoledo.edu/offices/accessibility-disability/,allow,,Mission of The Office Of Accessibility and Disability Resources,1445
+access002,https://www.utoledo.edu/offices/accessibility-disability/student/index.html,Accessibility,ok,200,https://www.utoledo.edu/offices/accessibility-disability/student/,allow,,Students,3403
+counsel002,https://www.utoledo.edu/studentaffairs/counseling/crisisresources.html,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/crisisresources.html,allow,,Crisis Resources,5087
+counsel003,https://www.utoledo.edu/studentaffairs/counseling/selfhelp/,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/selfhelp/,allow,,Self-Help Resources,609
+counsel004,https://www.utoledo.edu/studentaffairs/counseling/singlesession.html,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/singlesession.html,allow,,Schedule an Appointment,1767
+counsel005,https://www.utoledo.edu/studentaffairs/counseling/star/,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/star/,allow,,STAR Suicide prevention awareness and training,3732
+counsel006,https://www.utoledo.edu/studentaffairs/counseling/mantra-health/,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/mantra-health/,allow,,Care Where You Are,1233
+conduct001,https://www.utoledo.edu/studentaffairs/conduct/index.html,Conduct,ok,200,https://www.utoledo.edu/studentaffairs/conduct/,allow,,"Mission, Vision, and Values",633
+affairs001,https://www.utoledo.edu/studentaffairs/studentlegalservices/,StudentAffairs,ok,200,https://www.utoledo.edu/studentaffairs/studentlegalservices/,allow,,Welcome to Student Legal Services!,5269
+pantry002,https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html,BasicNeeds,ok,200,https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html,allow,,Food Pantry Eligibility,520
+titleix002,https://www.utoledo.edu/title-ix/policies.html,TitleIX,ok,200,https://www.utoledo.edu/title-ix/policies.html,allow,,Policies,1375
+titleix003,https://www.utoledo.edu/title-ix/sexual-misconduct/,TitleIX,ok,200,https://www.utoledo.edu/title-ix/sexual-misconduct/,allow,,Get Help with Confidential Resources,3554
+titleix004,https://www.utoledo.edu/title-ix/resources.html,TitleIX,ok,200,https://www.utoledo.edu/title-ix/resources.html,allow,,On & Off Campus Resources,1654
+career002,https://www.utoledo.edu/career/students/,Career,ok,200,https://www.utoledo.edu/career/students/,allow,,Rocket Career Center,903
+career003,https://www.utoledo.edu/career/students/job-search.html,Career,ok,200,https://www.utoledo.edu/career/students/job-search.html,allow,,Job Search,1448
+career004,https://www.utoledo.edu/career/pathway/,Career,ok,200,https://www.utoledo.edu/career/pathway/,allow,,The Career Development Pathway,7615
+career005,https://www.utoledo.edu/career/employers/policies.html,Career,ok,200,https://www.utoledo.edu/career/employers/policies.html,allow,,Recruiting Policies,6190
+orient002,https://www.utoledo.edu/orientation/transfer/,Orientation,ok,200,https://www.utoledo.edu/orientation/transfer/,allow,,Welcome New Rockets!,3607
+orient003,https://www.utoledo.edu/orientation/online-students.html,Orientation,ok,200,https://www.utoledo.edu/orientation/online-students.html,allow,,100% Online Degree Students,1114
+intl002,https://www.utoledo.edu/cisp/international/,International,ok,200,https://www.utoledo.edu/cisp/international/,allow,,F-1 Student Journey: Admission to Post Completion,1932
+intl003,https://www.utoledo.edu/cisp/studyabroad/,International,ok,200,https://www.utoledo.edu/cisp/studyabroad/,allow,,Welcome to Education Abroad!,7419
+intl004,https://www.utoledo.edu/cisp/studyabroad/funding.html,International,ok,200,https://www.utoledo.edu/cisp/studyabroad/funding.html,allow,,Scholarships and Grants,6616
+intl005,https://www.utoledo.edu/cisp/passport/index.html,International,ok,200,https://www.utoledo.edu/cisp/passport/,allow,,Passport Information and Photos,3123
+test001,https://www.utoledo.edu/centers/testingcenter/main/placement.html,Testing,ok,200,https://www.utoledo.edu/centers/testingcenter/main/placement.html,allow,,Placement Testing,3281
+test002,https://www.utoledo.edu/centers/testingcenter/main/,Testing,ok,200,https://www.utoledo.edu/centers/testingcenter/main/,allow,,UToledo Testing Services,1425
+shuttle001,https://www.utoledo.edu/offices/auxiliary/bus-services/busstop.html,Transportation,ok,200,https://www.utoledo.edu/offices/auxiliary/bus-services/busstop.html,allow,,TransLoc shuttle Stops,635
+shuttle002,https://www.utoledo.edu/offices/auxiliary/bus-services/inclementweather.html,Transportation,ok,200,https://www.utoledo.edu/offices/auxiliary/bus-services/inclementweather.html,allow,,Inclement weather & Lucas County Snow Emergency Levels,1758
+shuttle003,https://www.utoledo.edu/offices/auxiliary/bus-services/artmuseuntimes.html,Transportation,ok,200,https://www.utoledo.edu/offices/auxiliary/bus-services/artmuseuntimes.html,allow,,Art Museum Shuttle Times - Gold Loop,575
+shuttle004,https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html,Transportation,ok,200,https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html,allow,,UTMC (Health Science Campus) shuttle Times - Gold Loop,525
+card002,https://www.utoledo.edu/rocketcard/,RocketCard,ok,200,https://www.utoledo.edu/rocketcard/,allow,,Rocket Card,1563
+card003,https://www.utoledo.edu/rocketcard/rocket-mobile-id/index.html,RocketCard,ok,200,https://www.utoledo.edu/rocketcard/rocket-mobile-id/,allow,,Rocket Mobile ID,1573
+safety003,https://www.utoledo.edu/publicsafety/hospitalsecurity/index.html,Safety,ok,200,https://www.utoledo.edu/publicsafety/hospitalsecurity/,allow,,Hospital Security,1168
+rec002,https://www.utoledo.edu/studentaffairs/rec/SRC_Membership.html,Recreation,ok,200,https://www.utoledo.edu/studentaffairs/rec/SRC_Membership.html,allow,,Memberships,7351
+rec003,https://www.utoledo.edu/studentaffairs/rec/aquatics/,Recreation,ok,200,https://www.utoledo.edu/studentaffairs/rec/aquatics/,allow,,UToledo Rec Aquatic Center,2431
+fa032,https://www.utoledo.edu/financialaid/hsc/index.html,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/hsc/,allow,,Health Science Campus Office of Financial Aid,1184
+fa033,https://www.utoledo.edu/financialaid/parents-and-family/,FinancialAid,ok,200,https://www.utoledo.edu/financialaid/parents-and-family/,allow,,Financial Aid 101 for Parents and Families,2090
+counsel007,https://www.utoledo.edu/studentaffairs/counseling/selfhelp/copingskills/selfcare.html,Counseling,ok,200,https://www.utoledo.edu/studentaffairs/counseling/selfhelp/copingskills/selfcare.html,allow,,Self-Care,1405
+safety004,https://www.utoledo.edu/studentaffairs/saepp/,Safety,ok,200,https://www.utoledo.edu/studentaffairs/saepp/,allow,,Sexual Misconduct Prevention Education Programming,1883

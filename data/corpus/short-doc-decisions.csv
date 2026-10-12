@@ -1,0 +1,19 @@
+doc_id,word_count,origin,title,url,decision,notes
+it004,19,original,Networks,https://www.utoledo.edu/it/service-catalog/networks/,KEEP,"KEEP. Names the UToledo and Eduroam networks. Gold for ff-007. The page itself is a short catalog node. Flags: short,weak_title Recounted after QA."
+it009,22,original,IT Support,https://www.utoledo.edu/it/service-catalog/it-support/,KEEP,"KEEP. Navigation node for desktop support, office moves, and the help desk. Child pages hold the detail. Flags: short,weak_title Recounted after QA."
+library006,31,original,I'm Looking For...,https://www.utoledo.edu/library/imlookingfor.html,KEEP,"KEEP. Navigation list of library resource types. Low prose, but the categories are the page. Flags: short,nav_heavy,weak_title Recounted after QA."
+housing009,35,original,residence life Forms,https://www.utoledo.edu/studentaffairs/reslife/forms.html,KEEP,"KEEP. Names residence-life forms, including the residency exemption and contract cancellation. Flags: short,nav_heavy Recounted after QA."
+library002,42,original,Services provided by the University Libraries,https://www.utoledo.edu/library/serv/,KEEP,KEEP. Names public services and library instruction as library service areas. Flags: short Recounted after QA.
+reg001,42,original,Office of the Registrar,https://www.utoledo.edu/offices/registrar/,KEEP,"KEEP. States the registrar's duties: registration, graduation, prerequisites, grades, and transcripts. Flags: short Recounted after QA."
+military001,53,original,Military Service Center,https://www.utoledo.edu/military/,KEEP,KEEP. Short office page with contact and service facts. Flags: short Recounted after QA.
+it005,60,original,Desktop Support,https://www.utoledo.edu/it/desktop-support/,KEEP,KEEP. Desktop support page. The earlier VPN index was thinner and was not used. Flags: short Recounted after QA.
+career001,71,original,Rocket Career Center,https://www.utoledo.edu/career/,KEEP,"KEEP. Career-center landing page. Deeper career pages were added as career002-career005. Flags: short,nav_heavy Recounted after QA."
+pantry002,75,new,Food Pantry Eligibility,https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html,KEEP,KEEP. States food-pantry eligibility. Included below the 80-word probe bar because the eligibility text is the page. Flags: short Recounted after QA.
+it003,80,original,INFORMATION TECHNOLOGY,https://www.utoledo.edu/it/service-catalog/,KEEP,"KEEP. IT service-catalog root. The site title is the generic INFORMATION TECHNOLOGY. Flags: short,weak_title Recounted after QA."
+parking004,84,original,Main Campus,https://www.utoledo.edu/campus/directions/,KEEP,"KEEP. Main Campus parking location page. Flags: short,weak_title Recounted after QA."
+conduct001,85,new,"Mission, Vision, and Values",https://www.utoledo.edu/studentaffairs/conduct/,KEEP,"KEEP. Student-conduct mission, vision, and values. Flags: short Recounted after QA."
+it011,85,original,IT Security,https://www.utoledo.edu/it/service-catalog/security/,RE_EXTRACT,"RE_EXTRACT. Live page listed four security services. The file now includes Security Policy and Compliance and Assessments. Still under 100 words."
+shuttle004,88,new,UTMC (Health Science Campus) shuttle Times - Gold Loop,https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html,KEEP,KEEP. UTMC gold-loop shuttle times. Flags: short Recounted after QA.
+it019,89,new,Connecting to the Virtual Lab,https://www.utoledo.edu/it/vlab/,KEEP,KEEP. Steps for connecting to the virtual lab. Flags: short Recounted after QA.
+it013,95,new,Legal Name Change,https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html,KEEP,KEEP. Legal-name-change instructions for IT accounts. Flags: short Recounted after QA.
+counsel003,97,new,Self-Help Resources,https://www.utoledo.edu/studentaffairs/counseling/selfhelp/,KEEP,KEEP. Counseling self-help resources. Flags: short Recounted after QA.

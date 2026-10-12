@@ -1,0 +1,46 @@
+doc_id	stored_words	live_words	jaccard	http	note	title_stored	title_live	final_url
+it003	80	80	1.000	200	MATCH	INFORMATION TECHNOLOGY	INFORMATION TECHNOLOGY	https://www.utoledo.edu/it/service-catalog/
+it004	19	19	1.000	200	MATCH	Networks	Networks	https://www.utoledo.edu/it/service-catalog/networks/
+it005	60	60	1.000	200	MATCH	Desktop Support	Desktop Support	https://www.utoledo.edu/it/desktop-support/
+it007	34	34	1.000	200	MATCH	Account Management & Authentication	Account Management & Authentication	https://www.utoledo.edu/it/service-catalog/accounts/
+it008	56	56	1.000	200	MATCH	Device Support & Printing	Device Support & Printing	https://www.utoledo.edu/it/service-catalog/devices-and-printing/
+it009	22	22	1.000	200	MATCH	IT Support	IT Support	https://www.utoledo.edu/it/service-catalog/it-support/
+it010	52	52	1.000	200	MATCH	Microsoft 365	Microsoft 365	https://www.utoledo.edu/it/service-catalog/microsoft365/
+it011	25	25	1.000	200	MATCH	IT Security	IT Security	https://www.utoledo.edu/it/service-catalog/security/
+reg001	42	42	1.000	200	MATCH	Office of the Registrar	Office of the Registrar	https://www.utoledo.edu/offices/registrar/
+reg003	109	109	1.000	200	MATCH	Add/Drop/Withdraw Deadlines	Add/Drop/Withdraw Deadlines	https://www.utoledo.edu/offices/registrar/add-drop-withdraw/
+reg010	443	443	1.000	200	MATCH	Diplomas and Certificates	Diplomas and Certificates	https://www.utoledo.edu/offices/registrar/diplomas.html
+fa005	1643	1643	1.000	200	MATCH	Scholarships	Scholarships	https://www.utoledo.edu/financialaid/scholarships/undergraduate/
+fa006	1306	1306	1.000	200	MATCH	Current Undergraduate Scholarships	Current Undergraduate Scholarships	https://www.utoledo.edu/financialaid/scholarships/current/
+fa007	1332	1332	1.000	200	MATCH	New Transfer or Adult Undergraduate Scholarships	New Transfer or Adult Undergraduate Scholarships	https://www.utoledo.edu/financialaid/scholarships/transfer/
+fa012	208	208	1.000	200	MATCH	Your Financial Aid How-To Guide	Your Financial Aid How-To Guide	https://www.utoledo.edu/financialaid/undergraduate/
+housing003	1038	1038	1.000	200	MATCH	New Student Housing Application	New Student Housing Application	https://www.utoledo.edu/studentaffairs/reslife/application.html
+housing004	813	813	1.000	200	MATCH	Current Student Application Process	Current Student Application Process	https://www.utoledo.edu/studentaffairs/reslife/returnerapplication.html
+housing009	35	35	1.000	200	MATCH	residence life Forms	residence life Forms	https://www.utoledo.edu/studentaffairs/reslife/forms.html
+library002	42	42	1.000	200	MATCH	Services provided by the University Libraries	Services provided by the University Libraries	https://www.utoledo.edu/library/serv/
+library006	31	31	1.000	200	MATCH	I'm Looking For...	I'm Looking For...	https://www.utoledo.edu/library/imlookingfor.html
+library009	266	266	1.000	200	MATCH	Off-Campus Access To Electronic Resources	Off-Campus Access To Electronic Resources	https://www.utoledo.edu/library/tech/remote.html
+parking004	84	84	1.000	200	MATCH	Main Campus	Main Campus	https://www.utoledo.edu/campus/directions/
+career001	71	71	1.000	200	MATCH	Rocket Career Center	Rocket Career Center	https://www.utoledo.edu/career/
+titleix001	568	568	1.000	200	MATCH	What is Title IX	What is Title IX	https://www.utoledo.edu/title-ix/
+military001	53	53	1.000	200	MATCH	Military Service Center	Military Service Center	https://www.utoledo.edu/military/
+it013	95	95	1.000	200	MATCH	Legal Name Change	Legal Name Change	https://www.utoledo.edu/it/service-catalog/accounts/legal-name-change/legal-name-change.html
+it019	89	89	1.000	200	MATCH	Connecting to the Virtual Lab	Connecting to the Virtual Lab	https://www.utoledo.edu/it/vlab/
+reg016	1239	1239	1.000	200	MATCH	Advanced Placement (AP) Credit	Advanced Placement (AP) Credit	https://www.utoledo.edu/offices/registrar/student_records/advan_credits.html
+reg020	239	239	1.000	200	MATCH	Digital Diplomas and Certificates	Digital Diplomas and Certificates	https://www.utoledo.edu/offices/registrar/cediploma/
+fa031	1363	1225	0.922	200	DIFF	International Student Scholarships	International Student Scholarships	https://www.utoledo.edu/financialaid/scholarships/international/
+acct005	108	108	1.000	200	MATCH	I am...	I am...	https://www.utoledo.edu/offices/treasurer/tuition/
+acct008	173	173	1.000	200	MATCH	Special Accounts	Special Accounts	https://www.utoledo.edu/offices/treasurer/collections.html
+housing012	108	108	1.000	200	MATCH	Mccomas Village	Mccomas Village	https://www.utoledo.edu/studentaffairs/reslife/halls/mccomas-village/
+housing014	255	255	1.000	200	MATCH	Parks Tower	Parks Tower	https://www.utoledo.edu/studentaffairs/reslife/halls/parks-tower/
+housing016	243	243	1.000	200	MATCH	What to Bring to Campus	What to Bring to Campus	https://www.utoledo.edu/studentaffairs/reslife/packing.html
+library010	615	615	1.000	200	MATCH	Carlson Library Reservation Information	Carlson Library Reservation Information	https://www.utoledo.edu/library/webforms/carlson-library-reservation-information.html
+library018	896	896	1.000	200	MATCH	Borrowing FAQ - Borrowing Library Materials (Circulation) - LibGuides at University of Toledo Libraries	Borrowing FAQ - Borrowing Library Materials (Circulation) - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/borrowing
+library019	477	477	1.000	200	MATCH	Interlibrary Loan - Interlibrary Loan (ILL) - LibGuides at University of Toledo Libraries	Interlibrary Loan - Interlibrary Loan (ILL) - LibGuides at University of Toledo Libraries	https://libguides.utoledo.edu/ill
+counsel003	97	97	1.000	200	MATCH	Self-Help Resources	Self-Help Resources	https://www.utoledo.edu/studentaffairs/counseling/selfhelp/
+counsel005	576	576	1.000	200	MATCH	STAR Suicide prevention awareness and training	STAR Suicide prevention awareness and training	https://www.utoledo.edu/studentaffairs/counseling/star/
+conduct001	85	85	1.000	200	MATCH	Mission, Vision, and Values	Mission, Vision, and Values	https://www.utoledo.edu/studentaffairs/conduct/
+pantry002	75	75	1.000	200	MATCH	Food Pantry Eligibility	Food Pantry Eligibility	https://www.utoledo.edu/studentaffairs/food-pantry/eligibility.html
+titleix003	521	521	1.000	200	MATCH	Get Help with Confidential Resources	Get Help with Confidential Resources	https://www.utoledo.edu/title-ix/sexual-misconduct/
+intl003	1168	1168	1.000	200	MATCH	Welcome to Education Abroad!	Welcome to Education Abroad!	https://www.utoledo.edu/cisp/studyabroad/
+shuttle004	88	88	1.000	200	MATCH	UTMC (Health Science Campus) shuttle Times - Gold Loop	UTMC (Health Science Campus) shuttle Times - Gold Loop	https://www.utoledo.edu/offices/auxiliary/bus-services/utmcbustimes.html

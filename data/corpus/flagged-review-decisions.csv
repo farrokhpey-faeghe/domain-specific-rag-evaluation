@@ -1,0 +1,46 @@
+doc_id,decision,live_check,justification
+it003,KEEP,http_200_compared_2026-10-11,"Live page matched the stored extract (Jaccard 1.0, HTTP 200). It is the IT catalog root. The heading INFORMATION TECHNOLOGY is the site title. The page names service areas and is short because the site is short."
+it004,KEEP,http_200_compared_2026-10-11,"Live #content is 102 characters and matches the file: UToledo and Eduroam, plus a VPN link. Gold for ff-007. No omitted paragraph was in the content region."
+it005,KEEP,http_200_compared_2026-10-11,Live extract matched. Desktop-support page with real support facts. The thinner VPN index was not substituted.
+it007,RE_EXTRACT,http_200_compared_2026-10-11,"Precision extraction kept the descriptions and dropped the service names. The content-region extract restores Affiliate Request, Legal Name Change, MFA Setup, and UTAD Password Reset. Those names are on the live page."
+it008,RE_EXTRACT,http_200_compared_2026-10-11,"The live catalog names Computers, Printing Scanning and Faxing, Office Moves, and Other Hardware. The old file had the sentences without those headings. The re-extract still states no loaner-laptop period."
+it009,KEEP,http_200_compared_2026-10-11,"Live #content is the three catalog links: Desktop Support, Office Moves, and Help Desk. Child pages hold the procedures. The file matches that content."
+it010,RE_EXTRACT,http_200_compared_2026-10-11,"The live page names OneDrive, Teams, Bookings, Outlook, and the student discount. The old file had the sentences without those product names, including the 1 TB OneDrive line."
+it011,RE_EXTRACT,http_200_compared_2026-10-11,The old file had two of four services. The live #content also lists Security Policy & Compliance and Assessments. The file now includes both.
+reg001,KEEP,http_200_compared_2026-10-11,"Live extract matched. The page states the registrar's duties: registration, graduation, prerequisites, grades, and transcripts."
+reg003,KEEP,http_200_compared_2026-10-11,"Live extract matched, including the sentence No date list found. The add/drop dates are not in the HTML. Kept so the missing-date fact stays visible."
+reg010,KEEP,http_200_compared_2026-10-11,"Live extract matched. The May 2022 date is the start of digital-diploma eligibility, not a stale policy presented as current."
+fa005,KEEP,http_200_compared_2026-10-11,"Live extract matched. Scholarships overview. Token overlap with fa006 and fa007 is about 0.73, below the 0.92 duplicate cutoff. The audiences differ."
+fa006,KEEP,http_200_compared_2026-10-11,"Live extract matched. Current-undergraduate scholarships. Related to fa005, fa007, and fa031, and not a duplicate."
+fa007,KEEP,http_200_compared_2026-10-11,"Live extract matched. Transfer and adult scholarships. The Class of 2020 line is a student profile, not the policy year."
+fa012,KEEP,http_200_compared_2026-10-11,Live extract matched. The Class of 2020 and 2023 lines are student profiles in a how-to guide.
+housing003,KEEP,http_200_compared_2026-10-11,Live extract matched. States the $40 application fee and the 25-mile residency rule. Overlaps housing004 at Jaccard 0.76 and remains the application page.
+housing004,KEEP,http_200_compared_2026-10-11,Live extract matched. Related to housing003 and still a distinct housing-process page.
+housing009,KEEP,http_200_compared_2026-10-11,"Live extract matched. It is a list of residence-life form names, including contract cancellation and the residency exemption. Short and useful as an index."
+library002,KEEP,http_200_compared_2026-10-11,Live extract matched. Names public services and library instruction.
+library006,KEEP,http_200_compared_2026-10-11,"Live #content is the resource-type list (articles, reserves, theses, maps, and the rest). It is a navigation index. The names are the page, and deeper guides exist elsewhere."
+library009,KEEP,http_200_compared_2026-10-11,Live extract matched and still says Updated 3/5/2018. The remote-access rules are the official page text. A person should confirm the login steps are still current.
+parking004,KEEP,http_200_compared_2026-10-11,Live extract matched. Main Campus parking location page.
+career001,KEEP,http_200_compared_2026-10-11,Live extract matched. Career-center landing page. career002 through career005 hold the longer pages.
+titleix001,KEEP,http_200_compared_2026-10-11,"Live extract matched. The 20202 flag was the Washington D.C. ZIP code, not a policy year."
+military001,KEEP,http_200_compared_2026-10-11,Live extract matched. Short office page with contact and service facts.
+it013,KEEP,http_200_compared_2026-10-11,Live extract matched. Legal-name-change steps for IT accounts.
+it019,KEEP,http_200_compared_2026-10-11,Live extract matched. Virtual-lab connection steps.
+reg016,KEEP,http_200_compared_2026-10-11,Live extract matched. AP credit table. Effective as of Fall 2024 is the policy's effective date. HIST 2010 and HIST 2020 are course numbers.
+reg020,KEEP,http_200_compared_2026-10-11,Live extract matched. Digital diplomas. The May 2022 line limits who can buy a CeCredential.
+fa031,KEEP,http_200_compared_2026-10-11,"A first re-extract was 138 words shorter. A second live extract matched the stored file at Jaccard 1.0, and the HTML still contains the scholarship-mailing sentences. The stored file was kept."
+acct005,KEEP,http_200_compared_2026-10-11,Live extract matched. The heading I am... is the page's own heading. The body has Rocket Solution Central at 419.530.8700 and the Health Science Student Service Center at 419.383.3600.
+acct008,KEEP,http_200_compared_2026-10-11,"Live extract matched. Special-accounts page. Many short lines are account names, not a discarded menu."
+housing012,KEEP,http_200_compared_2026-10-11,Live extract matched. McComas Village hall page. Short lines are hall facts.
+housing014,KEEP,http_200_compared_2026-10-11,Live extract matched. Parks Tower. The 2018 date is the renovation year stated on the page.
+housing016,KEEP,http_200_compared_2026-10-11,Live extract matched. Packing list. The nav-heavy flag is the list format.
+library010,KEEP,http_200_compared_2026-10-11,"Live extract matched. CL2024 is a classroom code, not a policy year."
+library018,KEEP,http_200_compared_2026-10-11,"Live extract matched. Borrowing FAQ, including the 2020 fine-free note and the $50 replacement charge. The historical sentence is labeled as the pandemic period."
+library019,KEEP,http_200_compared_2026-10-11,"Live extract matched. The page leads with the summer 2025 UTMOST change and also keeps a Nov 8, 2018 note above a Dec 16, 2025 note. Both dates are in the source."
+counsel003,KEEP,http_200_compared_2026-10-11,Live extract matched. Counseling self-help resources.
+counsel005,KEEP,http_200_compared_2026-10-11,Live extract matched. STAR began in 2020. The 2020-2022 grant lines are program history on the page.
+conduct001,KEEP,http_200_compared_2026-10-11,"Live extract matched. Mission, vision, and values of student conduct."
+pantry002,KEEP,http_200_compared_2026-10-11,"Live extract matched. Eligibility rules: current enrollment, emergency examples, and bring a Rocket Number."
+titleix003,KEEP,http_200_compared_2026-10-11,Live extract matched. The 20202 flag was the Washington D.C. ZIP code.
+intl003,KEEP,http_200_compared_2026-10-11,"Live extract matched. Education-abroad page. The 2022 and 2023 headings are past student placements, not the current application rule."
+shuttle004,KEEP,http_200_compared_2026-10-11,"Live extract matched. UTMC gold-loop times, including 7:32 AM and the Friday exceptions."
