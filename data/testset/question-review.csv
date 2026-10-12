@@ -1,0 +1,39 @@
+case_id,set,answerable,case_type,result,evidence
+ff-001,primary,true,single_doc,kept,rockets.utoledo.edu is in it001. Gold id exists.
+ff-002,primary,true,single_doc,kept,419-530-2400 and 419-383-2400 are in it002.
+ff-003,primary,true,single_doc,kept,7:30 am - 5:00 pm is in library001.
+ff-004,primary,true,single_doc,kept,419.530.3451 and noon-4 p.m. are in health001.
+ff-005,primary,true,single_doc,kept,GOROCKETS and 50% are in parking001.
+ff-006,primary,true,single_doc,kept,card001 states the Rocket Card office is room 2525. parking002 also says Rocket Card Office Room 2525 for a lost card. Either page answers the question. Gold stays card001.
+ff-007,primary,true,multi_doc,kept,Eduroam is in it004 and not in it002. ithelpdesk@utoledo.edu is in it002. Both documents are required.
+ff-008,primary,true,single_doc,case_type_changed,"Was multi_doc with housing003 and housing010. housing003 contains both the $40 housing application fee and the 25-mile radius rule. Relabeled single_doc with gold housing003. Answerable label unchanged."
+ff-009,primary,true,multi_doc,kept,Faculty & Staff reservation rule is in library005. Academic Transcripts path is in reg008. Neither document has both facts.
+ff-010,primary,true,paraphrase,kept,not required to have a meal plan is in dining001.
+ff-011,primary,true,paraphrase,kept,419.530.2600 is in safety002.
+ff-012,primary,true,paraphrase,kept,$50.00 late registration fee is in reg005.
+ff-013,primary,false,out_of_domain,kept,Banana bread is not a university help topic. No corpus document answers it.
+ff-014,primary,false,out_of_domain,kept,The 1998 World Cup is not in the corpus.
+ff-015,primary,false,missing_info,kept,No semester parking-permit price. Pages name ParkUToledo and say a permit is required.
+ff-016,primary,false,missing_info,kept,reg003 says no date list was found. acct006 has Fall 2026 refund and nonpayment dates and not the last day to drop a full-term class.
+ff-017,primary,false,missing_info,kept,"No color-page price. it008 now names the printing catalog and still states no price."
+ff-018,primary,false,false_premise,kept,No Mars campus is described.
+ff-019,primary,false,false_premise,kept,housing010 and acct011 require the first two years. Four-year language in acct002 and acct007 is the rate guarantee.
+ff-020,primary,false,personal,kept,No asker GPA is in the corpus.
+ff-021,primary,false,personal,kept,Aid pages describe programs and not an individual award.
+ff-d001,draft,true,single_doc,kept,no additional cost is in counsel001.
+ff-d002,draft,true,single_doc,kept,temporary food aid is in pantry001.
+ff-d003,draft,true,paraphrase,fact_tightened,must_include changed from international to international students. orient001 supports the separate orientation.
+ff-d004,draft,true,multi_doc,kept,419.530.2426 is in counsel001. 419.530.3451 is in health001.
+ff-d005,draft,false,missing_info,kept,it008 was re-extracted and still states no loan period. No other document states one.
+ff-d006,draft,false,false_premise,kept,No Ann Arbor campus is described.
+ff-d007,draft,false,personal,kept,The corpus does not contain the asker's Rocket number.
+ff-d008,draft,false,out_of_domain,kept,Changing a tire is not a university help topic.
+ff-d009,draft,true,single_doc,kept,your UToledo email address is in it012 as an MFA option the page rejects.
+ff-d010,draft,true,single_doc,kept,pagp.utoledo.edu is in it015.
+ff-d011,draft,true,single_doc,kept,up to 6 times is in library018. The question is limited to students.
+ff-d012,draft,true,single_doc,kept,419.530.4981 and studentdisability@utoledo.edu are in access001.
+ff-d013,draft,true,single_doc,kept,end of the spring semester is in fa022.
+ff-d014,draft,true,multi_doc,kept,419-530-2400 is in it012. pagp.utoledo.edu is in it015.
+ff-p001,proposal,true,single_doc,new,7:32 AM is in shuttle004. Not promoted.
+ff-p002,proposal,true,single_doc,new,currently enrolled and Rocket Number are in pantry002. Not promoted.
+ff-p003,proposal,true,single_doc,new,"hardware, software, and services is in the re-extracted it011. Not promoted."
