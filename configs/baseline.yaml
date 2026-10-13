@@ -19,7 +19,7 @@ abstention:
   min_score: null # retrieval-score gate; tune it on the dev split with `deskrag eval sweep`
 
 llm:
-  model: llama3.2:3b # placeholder until the Day-1 bake-off; pin the exact tag you pick
+  model: qwen3:4b-instruct-2507-q4_K_M # Day-1 bake-off winner (docs/model-bakeoff.md)
   temperature: 0.0
   seed: 42
   num_ctx: 4096
