@@ -13,9 +13,7 @@ def _split_long(block: str, size_words: int) -> list[str]:
     return [" ".join(words[i : i + size_words]) for i in range(0, len(words), size_words)]
 
 
-def chunk_document(
-    doc: Document, size_words: int = 300, overlap_words: int = 50
-) -> list[Chunk]:
+def chunk_document(doc: Document, size_words: int = 300, overlap_words: int = 50) -> list[Chunk]:
     if overlap_words >= size_words:
         raise ValueError("overlap_words must be smaller than size_words")
 

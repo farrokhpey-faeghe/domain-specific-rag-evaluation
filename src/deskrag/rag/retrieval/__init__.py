@@ -26,9 +26,7 @@ def build_retriever(cfg: SystemConfig) -> Retriever:
         chunks = [
             chunk
             for doc in docs
-            for chunk in chunk_document(
-                doc, cfg.chunking.size_words, cfg.chunking.overlap_words
-            )
+            for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
         ]
         return BM25Retriever(chunks)
     raise NotImplementedError(f"retrieval method {method!r} is not built yet (M2)")

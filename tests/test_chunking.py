@@ -6,8 +6,12 @@ from deskrag.rag.chunking import chunk_document
 
 def make_doc(text: str) -> Document:
     return Document(
-        doc_id="demo", title="Demo", url="https://example.edu",
-        section="IT", snapshot_date=date(2026, 10, 8), text=text,
+        doc_id="demo",
+        title="Demo",
+        url="https://example.edu",
+        section="IT",
+        snapshot_date=date(2026, 10, 8),
+        text=text,
     )
 
 

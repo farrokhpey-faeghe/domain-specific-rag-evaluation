@@ -24,7 +24,7 @@ class BM25Retriever:
         scores = self._index.get_scores(tokenize(query))
         # Best score first; ties broken by chunk_id so results are always the same order.
         ranked = sorted(
-            zip(scores, self._chunks), key=lambda pair: (-pair[0], pair[1].chunk_id)
+            zip(scores, self._chunks, strict=True), key=lambda pair: (-pair[0], pair[1].chunk_id)
         )
         return [
             RetrievedChunk(chunk=chunk, score=float(score), rank=rank)
