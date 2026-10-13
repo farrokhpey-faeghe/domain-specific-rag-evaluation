@@ -5,9 +5,11 @@ from typing import Annotated
 
 import typer
 
-from deskrag.commands import todo
+from deskrag.core.config import load_config
+from deskrag.core.corpus import load_corpus
+from deskrag.rag.chunking import chunk_document
+from deskrag.rag.retrieval import build_retriever
 
-OWNER = "WS2 (feat/retrieval)"
 BASELINE_CONFIG = Path("configs/baseline.yaml")
 
 ConfigOption = Annotated[Path, typer.Option(help="System config.")]
@@ -18,7 +20,15 @@ index_app = typer.Typer(help="Build retrieval indexes (WS2).", no_args_is_help=T
 @index_app.command("build")
 def build(config: ConfigOption = BASELINE_CONFIG) -> None:
     """Chunk the corpus and build (or refresh) the index the config's retriever needs."""
-    todo(OWNER, "index build")
+    cfg = load_config(config)
+    docs = load_corpus(cfg.corpus_dir)
+    chunks = [
+        chunk
+        for doc in docs
+        for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
+    ]
+    build_retriever(cfg)  # builds the index once, to check it works
+    typer.echo(f"{len(docs)} docs -> {len(chunks)} chunks (method: {cfg.retrieval.method})")
 
 
 def retrieve(
@@ -27,7 +37,10 @@ def retrieve(
     k: Annotated[int, typer.Option("-k", help="How many chunks to show.")] = 5,
 ) -> None:
     """Print the top-k chunks for QUERY: rank, score, doc_id, and a snippet."""
-    todo(OWNER, "retrieve")
+    retriever = build_retriever(load_config(config))
+    for hit in retriever.retrieve(query, k):
+        snippet = " ".join(hit.chunk.text.split())[:120]
+        typer.echo(f"{hit.rank}. {hit.score:.2f}  {hit.chunk.chunk_id}  {snippet}")
 
 
 def register(app: typer.Typer) -> None:
