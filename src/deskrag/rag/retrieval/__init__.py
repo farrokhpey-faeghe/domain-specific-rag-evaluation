@@ -10,6 +10,23 @@ from deskrag.core.interfaces import Retriever
 
 
 def build_retriever(cfg: SystemConfig) -> Retriever:
-    raise NotImplementedError(
-        "WS2 (feat/retrieval): return the retriever named by cfg.retrieval.method"
-    )
+    # Imports are inside the function so loading this package stays cheap.
+    from deskrag.core.corpus import load_corpus
+    from deskrag.core.fakes import FakeRetriever
+    from deskrag.rag.chunking import chunk_document
+
+    docs = load_corpus(cfg.corpus_dir)
+    method = cfg.retrieval.method
+
+    if method == "fake":
+        return FakeRetriever(docs)
+    if method == "bm25":
+        from deskrag.rag.retrieval.bm25 import BM25Retriever
+
+        chunks = [
+            chunk
+            for doc in docs
+            for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
+        ]
+        return BM25Retriever(chunks)
+    raise NotImplementedError(f"retrieval method {method!r} is not built yet (M2)")
