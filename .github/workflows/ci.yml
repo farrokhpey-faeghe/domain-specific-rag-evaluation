@@ -26,3 +26,34 @@ jobs:
         run: uv run ruff format --check .
       - name: Tests (also validates committed test cases, corpus, and configs)
         run: uv run pytest
+
+  regression-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - run: uv sync --locked
+      - name: Verify unchanged run passes and planted fixture fails
+        shell: bash
+        run: |
+          uv run deskrag compare tests/regression/fixtures/gate-baseline tests/regression/fixtures/gate-baseline
+          set +e
+          uv run deskrag compare tests/regression/fixtures/gate-baseline tests/regression/fixtures/gate-candidate
+          status=$?
+          set -e
+          test "$status" -eq 1
+
+  retrieval-gate:
+    runs-on: ubuntu-latest
+    # Until M2 this is advisory. Set repository variable to blocking after integration.
+    continue-on-error: ${{ vars.DESKRAG_RETRIEVAL_GATE != 'blocking' }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - run: uv sync --locked
+      - name: Require reviewed real retrieval baseline
+        shell: bash
+        run: |
+          test -f baselines/dev-retrieval/meta.json || { echo "::error::WS2/WS4 integration and a real dev-retrieval baseline are required"; exit 2; }
+      - name: BM25 retrieval-only evaluation and comparison
+        run: uv run deskrag regress --config configs/ci-retrieval.yaml --baseline baselines/dev-retrieval --gates baselines/retrieval-gates.yaml --retrieval-only

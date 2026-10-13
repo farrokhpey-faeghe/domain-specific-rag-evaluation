@@ -1,0 +1,9 @@
+# Absolute differences: 0.05 means five percentage points, not five percent relative.
+alpha: 0.05
+metrics:
+  e2e_pass: {tolerance: 0.05, gate: true}
+  hit@5: {tolerance: 0.05, gate: true}
+  abstain_correct: {tolerance: 0.05, gate: true}
+  fact_recall: {tolerance: 0.05, gate: false}
+  format_error_rate: {tolerance: 0.02, gate: false}
+  latency_p95_s: {tolerance: 2.0, gate: false}

@@ -23,7 +23,8 @@ check: lint test
 eval:
 	uv run deskrag eval run --config $(CONFIG) --split dev
 
-# WS5: run CONFIG on dev, then compare it against the committed baseline
+# WS5: requires a promoted baseline and WS4's eval runner.
+BASELINE ?= baselines/dev
+GATES ?= configs/regression.yaml
 regress:
-	@echo "Not wired up yet (WS5, feat/regression-ci): eval run with CONFIG, then deskrag compare baselines/dev <new run>"
-	@exit 3
+	uv run deskrag regress --config $(CONFIG) --baseline $(BASELINE) --gates $(GATES)

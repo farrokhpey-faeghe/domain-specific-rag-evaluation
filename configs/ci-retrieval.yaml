@@ -1,0 +1,6 @@
+# Real BM25, no Ollama. WS4 must support --retrieval-only.
+extends: baseline.yaml
+name: ci-retrieval
+retrieval:
+  method: bm25
+  k: 5

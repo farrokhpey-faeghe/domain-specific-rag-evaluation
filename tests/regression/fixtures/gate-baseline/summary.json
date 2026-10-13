@@ -1,0 +1,19 @@
+{
+  "run_id": "gate-baseline",
+  "metrics": {
+    "e2e_pass": 0.6,
+    "abstain_correct": 0.6,
+    "hit@5": 1.0
+  },
+  "by_case_type": {},
+  "counts": {
+    "cases": 20,
+    "ok": 20,
+    "errors": 0,
+    "truncated": 0,
+    "parse_errors": 0
+  },
+  "failure_counts": {
+    "WRONG_ANSWER": 8
+  }
+}

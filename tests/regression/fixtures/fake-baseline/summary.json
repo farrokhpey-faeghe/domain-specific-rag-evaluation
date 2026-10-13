@@ -1,0 +1,19 @@
+{
+  "run_id": "fake-baseline",
+  "metrics": {
+    "e2e_pass": 0.5714285714285714,
+    "abstain_correct": 0.5714285714285714,
+    "hit@5": 1.0
+  },
+  "by_case_type": {},
+  "counts": {
+    "cases": 7,
+    "ok": 7,
+    "errors": 0,
+    "truncated": 0,
+    "parse_errors": 0
+  },
+  "failure_counts": {
+    "WRONG_ANSWER": 3
+  }
+}
