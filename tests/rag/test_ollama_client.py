@@ -2,10 +2,15 @@ import httpx
 import ollama
 import pytest
 
+from deskrag.core.config import SystemConfig
 from deskrag.core.interfaces import InfraError
+from deskrag.rag.llm import build_llm, llm_options
+from deskrag.rag.llm.cache import CachedLLM
+from deskrag.rag.llm.env import env_fingerprint
 from deskrag.rag.llm.ollama_client import OllamaClient
 
 MESSAGES = [{"role": "user", "content": "How much is a transcript?"}]
+RAG = SystemConfig(name="x", system="rag", llm={"model": "llama3.2:3b", "max_tokens": 256})
 
 
 def reply(content="{}", model="llama3.2:3b", done_reason="stop"):
@@ -121,3 +126,59 @@ def test_a_model_that_is_not_pulled_says_how_to_pull_it():
 def test_server_version():
     client = OllamaClient("llama3.2:3b", client=StubOllama(version="0.40.3"))
     assert client.server_version() == "0.40.3"
+
+
+def test_llm_options_come_from_the_config():
+    assert llm_options(RAG.llm) == {
+        "temperature": 0.0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 256,
+    }
+
+
+def test_build_llm_checks_the_model_is_pulled(monkeypatch):
+    monkeypatch.setattr(ollama, "Client", lambda **kwargs: StubOllama(models=[]))
+    with pytest.raises(InfraError, match="ollama pull llama3.2:3b"):
+        build_llm(RAG)
+
+
+def test_build_llm_adds_the_cache_only_when_asked(monkeypatch):
+    stub = StubOllama(models=[("llama3.2:3b", "a80c")], version="0.40.3")
+    monkeypatch.setattr(ollama, "Client", lambda **kwargs: stub)
+    monkeypatch.delenv("DESKRAG_LLM_CACHE", raising=False)
+    assert isinstance(build_llm(RAG), OllamaClient)
+
+    monkeypatch.setenv("DESKRAG_LLM_CACHE", "1")
+    cached = build_llm(RAG)
+    assert isinstance(cached, CachedLLM)
+    assert cached.identity == {
+        "model": "llama3.2:3b",
+        "digest": "a80c",
+        "ollama_version": "0.40.3",
+        "think": False,
+    }
+
+
+class NoOllama:
+    def __getattr__(self, name):
+        raise AssertionError("must not contact Ollama")
+
+
+def test_env_fingerprint_leaves_ollama_alone_when_no_model_is_used():
+    env = env_fingerprint(SystemConfig(name="fake", system="fake"), client=NoOllama())
+    assert env.ollama_version is None
+    assert env.model_digests == {}
+
+
+def test_env_fingerprint_records_the_version_and_every_model_used():
+    stub = StubOllama(models=[("llama3.2:3b", "a80c"), ("nomic-embed-text:latest", "0a10")])
+    cfg = SystemConfig(
+        name="x",
+        system="rag",
+        llm={"model": "llama3.2:3b"},
+        retrieval={"method": "hybrid", "embed_model": "nomic-embed-text"},
+    )
+    env = env_fingerprint(cfg, client=OllamaClient("llama3.2:3b", client=stub))
+    assert env.ollama_version == "0.40.3"
+    assert env.model_digests == {"llama3.2:3b": "a80c", "nomic-embed-text": "0a10"}
