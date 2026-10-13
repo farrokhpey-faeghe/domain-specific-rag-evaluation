@@ -1,6 +1,6 @@
 # WS3: generation
 
-What `feat/generation` provides, and the rules other workstreams can rely on. Shared contracts are in [design.md](design.md); dates are in [workplan.md](workplan.md).
+What `feat/generation` provides, and the rules other workstreams can rely on. Shared contracts are in [design.md](design.md).
 
 ## Modules
 
@@ -47,7 +47,7 @@ The model must return `{"abstain": bool, "answer": str, "citations": [str]}`. Th
 
 Turn it on with `DESKRAG_LLM_CACHE=1`. Responses are stored in `.cache/llm/` (gitignored). The key is the sha256 of the model digest, the Ollama version, the think flag, the messages, the schema, and the options. A hit replays the stored response, including its original latency.
 
-It is off by default for two reasons. `deskrag eval run --reps 3` measures run-to-run variation, and with the cache on every rep would replay the same answer. Latencies in a cached run are also copies, not measurements. Use the cache to re-run an unchanged system cheaply, for example while developing metrics or for the demo.
+It is off by default for two reasons. `deskrag eval run --reps 3` measures run-to-run variation, and with the cache on every rep would replay the same answer. Latencies in a cached run are also copies, not measurements. Use the cache to re-run an unchanged system cheaply; while developing metrics or for the demo.
 
 ## Environment fingerprint (for WS4)
 
