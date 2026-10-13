@@ -1,0 +1,6 @@
+# "Does retrieval matter?": the baseline model answering from memory, with no retrieved context.
+# Prompt v1 says to use only the context, so closed-book needs a prompt of its own.
+extends: ../baseline.yaml
+name: closed-book
+system: closed_book
+prompt_version: closed-book-v1
