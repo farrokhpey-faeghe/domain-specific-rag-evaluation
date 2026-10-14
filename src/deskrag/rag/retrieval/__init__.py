@@ -7,13 +7,27 @@ always f"{doc_id}#{position}".
 
 from deskrag.core.config import SystemConfig
 from deskrag.core.interfaces import Retriever
+from deskrag.core.schemas import Chunk, Document
+
+
+def chunk_corpus(docs: list[Document], cfg: SystemConfig) -> list[Chunk]:
+    """Split every document into chunks using the config's chunking settings.
+
+    The one place that does this, so `index build` and `build_retriever` always agree.
+    """
+    from deskrag.rag.chunking import chunk_document
+
+    return [
+        chunk
+        for doc in docs
+        for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
+    ]
 
 
 def build_retriever(cfg: SystemConfig) -> Retriever:
     # Imports are inside the function so loading this package stays cheap.
     from deskrag.core.corpus import load_corpus
     from deskrag.core.fakes import FakeRetriever
-    from deskrag.rag.chunking import chunk_document
 
     docs = load_corpus(cfg.corpus_dir)
     method = cfg.retrieval.method
@@ -23,10 +37,5 @@ def build_retriever(cfg: SystemConfig) -> Retriever:
     if method == "bm25":
         from deskrag.rag.retrieval.bm25 import BM25Retriever
 
-        chunks = [
-            chunk
-            for doc in docs
-            for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
-        ]
-        return BM25Retriever(chunks)
+        return BM25Retriever(chunk_corpus(docs, cfg))
     raise NotImplementedError(f"retrieval method {method!r} is not built yet (M2)")

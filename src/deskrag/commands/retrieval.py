@@ -7,8 +7,7 @@ import typer
 
 from deskrag.core.config import load_config
 from deskrag.core.corpus import load_corpus
-from deskrag.rag.chunking import chunk_document
-from deskrag.rag.retrieval import build_retriever
+from deskrag.rag.retrieval import build_retriever, chunk_corpus
 
 BASELINE_CONFIG = Path("configs/baseline.yaml")
 
@@ -22,11 +21,7 @@ def build(config: ConfigOption = BASELINE_CONFIG) -> None:
     """Chunk the corpus and build (or refresh) the index the config's retriever needs."""
     cfg = load_config(config)
     docs = load_corpus(cfg.corpus_dir)
-    chunks = [
-        chunk
-        for doc in docs
-        for chunk in chunk_document(doc, cfg.chunking.size_words, cfg.chunking.overlap_words)
-    ]
+    chunks = chunk_corpus(docs, cfg)
     build_retriever(cfg)  # builds the index once, to check it works
     typer.echo(f"{len(docs)} docs -> {len(chunks)} chunks (method: {cfg.retrieval.method})")
 
