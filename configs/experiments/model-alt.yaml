@@ -1,0 +1,6 @@
+# Model-swap experiment: the bake-off runner-up instead of the baseline model (docs/model-bakeoff.md).
+extends: ../baseline.yaml
+name: model-alt
+
+llm:
+  model: llama3.2:3b
