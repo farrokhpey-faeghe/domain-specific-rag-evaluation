@@ -132,3 +132,152 @@ def test_empty_summary():
     assert summary.counts.cases == 0
     assert summary.failure_counts == {}
     assert all(value is None for value in summary.metrics.values())
+
+
+def test_run_saves_sample_results(sample_data, tmp_path):
+    from deskrag.core.runio import read_json, read_jsonl
+    from deskrag.core.schemas import CaseResult, RunSummary
+    from deskrag.evaluation.runner import run_cases
+
+    cases, system = sample_data
+    run_dir = tmp_path / "sample-run"
+
+    summary = run_cases(
+        "sample-run",
+        cases,
+        system,
+        run_dir,
+    )
+
+    saved_rows = read_jsonl(
+        run_dir / "results.jsonl",
+        CaseResult,
+    )
+    saved_summary = read_json(
+        run_dir / "summary.json",
+        RunSummary,
+    )
+
+    assert len(saved_rows) == 10
+    assert sum(row.passed for row in saved_rows) == 4
+    assert saved_summary == summary
+    assert summary.metrics["e2e_pass"] == pytest.approx(0.4)
+    assert (run_dir / "errors.jsonl").read_text() == ""
+
+
+def test_run_saves_each_repetition(sample_data, tmp_path):
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+    from deskrag.evaluation.runner import run_cases
+
+    cases, system = sample_data
+    run_dir = tmp_path / "repeated-run"
+
+    run_cases(
+        "repeated-run",
+        cases[:1],
+        system,
+        run_dir,
+        reps=2,
+    )
+
+    saved_rows = read_jsonl(
+        run_dir / "results.jsonl",
+        CaseResult,
+    )
+
+    assert len(saved_rows) == 2
+    assert [row.rep for row in saved_rows] == [0, 1]
+
+
+def test_run_logs_infra_error_and_continues(sample_data, tmp_path):
+    from deskrag.core.interfaces import InfraError
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+
+    class FailingSystem:
+        def answer(self, question):
+            if question == cases[0].question:
+                raise InfraError("Ollama unavailable")
+
+            return fake.answer(question)
+
+    run_dir = tmp_path / "error-run"
+
+    summary = run_cases(
+        "error-run",
+        cases[:2],
+        FailingSystem(),
+        run_dir,
+    )
+
+    saved_errors = read_jsonl(
+        run_dir / "errors.jsonl",
+        ErrorRow,
+    )
+    saved_rows = read_jsonl(
+        run_dir / "results.jsonl",
+        CaseResult,
+    )
+
+    assert len(saved_errors) == 1
+    assert saved_errors[0].error_class == "infra"
+    assert len(saved_rows) == 1
+    assert saved_rows[0].case_id == cases[1].case_id
+    assert summary.counts.errors == 1
+    assert summary.metrics["e2e_pass"] == 1.0
+
+
+def test_run_does_not_overwrite_existing_directory(
+    sample_data,
+    tmp_path,
+):
+    from deskrag.evaluation.runner import run_cases
+
+    cases, system = sample_data
+    run_dir = tmp_path / "existing-run"
+    run_dir.mkdir()
+    marker = run_dir / "keep.txt"
+    marker.write_text("existing data", encoding="utf-8")
+
+    with pytest.raises(FileExistsError):
+        run_cases("existing-run", cases, system, run_dir)
+
+    assert marker.read_text(encoding="utf-8") == "existing data"
+
+
+def test_run_saves_result_before_asking_next_question(
+    sample_data,
+    tmp_path,
+):
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    run_dir = tmp_path / "incremental-run"
+
+    class ObservingSystem:
+        def answer(self, question):
+            if question == cases[1].question:
+                saved = read_jsonl(
+                    run_dir / "results.jsonl",
+                    CaseResult,
+                )
+                assert len(saved) == 1
+                assert saved[0].case_id == cases[0].case_id
+
+            return fake.answer(question)
+
+    summary = run_cases(
+        "incremental-run",
+        cases[:2],
+        ObservingSystem(),
+        run_dir,
+    )
+
+    assert summary.counts.errors == 0
+    assert summary.counts.ok == 2
