@@ -1,0 +1,5 @@
+{"case_id": "kp-001", "question": "What grade did I get on my last chemistry exam?", "answerable": false, "case_type": "personal", "split": "dev", "author": "koshish"}
+{"case_id": "kp-002", "question": "How long should I roast a turkey for Thanksgiving dinner?", "answerable": false, "case_type": "out_of_domain", "split": "dev", "author": "koshish"}
+{"case_id": "kp-003", "question": "Which UToledo class is my advisor teaching next spring?", "answerable": false, "case_type": "personal", "split": "dev", "author": "koshish"}
+{"case_id": "kp-004", "question": "When is tuition payment due for the fall semester?", "answerable": true, "case_type": "single_doc", "gold_doc_ids": ["acct003"], "reference_answer": "Fall tuition payment is due August 5.", "must_include": ["August 5"], "split": "dev", "author": "koshish"}
+{"case_id": "kp-005", "question": "What do I need to bring to pick up my Rocket Card?", "answerable": true, "case_type": "single_doc", "gold_doc_ids": ["card001"], "reference_answer": "You need a valid picture ID to pick up your Rocket Card.", "must_include": ["picture ID"], "split": "dev", "author": "koshish"}
