@@ -1,11 +1,16 @@
+from pathlib import Path
+
 from deskrag.core.corpus import load_corpus
 from deskrag.core.interfaces import Retriever
 from deskrag.rag.chunking import chunk_document
 from deskrag.rag.retrieval.bm25 import BM25Retriever, tokenize
 
+REPO = Path(__file__).resolve().parents[1]
+CORPUS = str(REPO / "data" / "samples" / "corpus")
+
 
 def make_retriever() -> BM25Retriever:
-    docs = load_corpus("data/samples/corpus")
+    docs = load_corpus(CORPUS)
     return BM25Retriever([c for d in docs for c in chunk_document(d)])
 
 
