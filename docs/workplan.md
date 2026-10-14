@@ -67,12 +67,12 @@ At M2, WS1 has 20% of the cases re-labeled blind by a second person, then runs t
 ## WS2 `feat/retrieval`: chunking and retrievers
 
 **Day 1**
-- [ ] `src/deskrag/rag/chunking.py`: `chunk_document(doc, size_words, overlap_words) -> list[Chunk]`. It respects headings and paragraphs and produces ids `f"{doc_id}#{n}"`. Test on `data/samples/corpus`.
-- [ ] `src/deskrag/rag/retrieval/bm25.py`: BM25 (rank-bm25, lowercase alphanumeric tokens). Implement `build_retriever` for `method: bm25`.
+- [x] `src/deskrag/rag/chunking.py`: `chunk_document(doc, size_words, overlap_words) -> list[Chunk]`. It respects headings and paragraphs and produces ids `f"{doc_id}#{n}"`. Test on `data/samples/corpus`.
+- [x] `src/deskrag/rag/retrieval/bm25.py`: BM25 (rank-bm25, lowercase alphanumeric tokens). Implement `build_retriever` for `method: bm25`.
 
 **M1**
-- [ ] `deskrag index build` and `deskrag retrieve "…" -k 5` (prints rank, score, doc_id, and a snippet).
-- [ ] BM25 on the real corpus; spot-check 10 questions with WS1.
+- [x] `deskrag index build` and `deskrag retrieve "…" -k 5` (prints rank, score, doc_id, and a snippet).
+- [x] BM25 on the real corpus; spot-check 10 questions with WS1.
 
 **M2**
 - [ ] `dense.py`: batched Ollama `/api/embed` with nomic's `search_query:` / `search_document:` prefixes, numpy cosine similarity, and a cache at `.cache/index/<corpus_sha>-<model>.npz`.
