@@ -1,0 +1,5 @@
+# Planted retrieval regression candidate. Evaluate on dev only.
+extends: ../baseline.yaml
+name: k1
+retrieval:
+  k: 1

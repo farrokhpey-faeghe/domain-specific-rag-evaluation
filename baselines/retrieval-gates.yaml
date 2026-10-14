@@ -1,0 +1,6 @@
+# Use with retrieval-only runs, which have no answer/abstention metrics.
+alpha: 0.05
+metrics:
+  hit@5: {tolerance: 0.05, gate: true}
+  hit@1: {tolerance: 0.05, gate: true}
+  mrr: {tolerance: 0.05, gate: false}

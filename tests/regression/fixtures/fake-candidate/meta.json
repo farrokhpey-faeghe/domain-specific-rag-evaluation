@@ -1,0 +1,47 @@
+{
+  "run_id": "fake-candidate",
+  "created_at": "2026-10-12T00:00:00Z",
+  "config": {
+    "name": "fake",
+    "system": "fake",
+    "corpus_dir": "data/samples/corpus",
+    "chunking": {
+      "size_words": 300,
+      "overlap_words": 50
+    },
+    "retrieval": {
+      "method": "fake",
+      "k": 3,
+      "embed_model": null
+    },
+    "abstention": {
+      "min_score": null
+    },
+    "llm": null,
+    "prompt_version": "v1",
+    "fixture_only": true,
+    "synthetic": false
+  },
+  "config_hash": "fa5058c470f76eab4948595e6001468a5699d2ace66fbc51b0af4c1984f18a97",
+  "git_sha": null,
+  "git_dirty": false,
+  "dataset": {
+    "path": "data/samples/cases.jsonl",
+    "split": "dev",
+    "sha256": "228de81681116959d95acd71c30b51605682826b8676beb4665ce1e96d0c2d3b",
+    "n_cases": 7
+  },
+  "corpus": {
+    "path": "data/samples/corpus",
+    "sha256": "787489cf4b8d43c055c41896af4330e5e9eba4961b7ef1b2c4a9f5410c028fa1",
+    "n_docs": 5
+  },
+  "env": {
+    "machine": "fixture",
+    "platform": "offline",
+    "python": "3.12",
+    "ollama_version": null,
+    "model_digests": {}
+  },
+  "reps": 1
+}
