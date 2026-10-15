@@ -25,10 +25,58 @@ def run(
     retrieval_only: Annotated[
         bool, typer.Option("--retrieval-only", help="Score retrieval only; no LLM calls.")
     ] = False,
-    reps: Annotated[int, typer.Option(help="Repetitions per case.")] = 1,
+    reps: Annotated[int, typer.Option(min=1, help="Repetitions per case.")] = 1,
+    run_dir: Annotated[Path | None, typer.Option(help="Output directory for this run.")] = None,
+    resume: Annotated[
+        bool, typer.Option(help="Resume --run-dir; skip completed responses.")
+    ] = False,
 ) -> None:
     """Run every case and write runs/<run_id>/ (meta, results, errors, summary)."""
-    todo(OWNER, "eval run")
+    if retrieval_only:
+        todo(OWNER, "eval run --retrieval-only (M2)")
+    if split not in {"dev", "test"}:
+        raise typer.BadParameter("Choose dev or test", param_hint="--split")
+    if limit is not None and limit < 1:
+        raise typer.BadParameter("Must be at least 1", param_hint="--limit")
+    if resume and run_dir is None:
+        raise typer.BadParameter("Resume requires --run-dir", param_hint="--resume")
+
+    from deskrag.core.config import config_hash, load_config
+    from deskrag.core.dataset import load_cases
+    from deskrag.core.runio import make_run_id
+    from deskrag.evaluation.runner import run_cases
+    from deskrag.systems import build_system
+
+    cfg = load_config(config)
+    selected = load_cases(cases, split=split)
+    if limit is not None:
+        selected = selected[:limit]
+    if not selected:
+        raise typer.BadParameter("No cases selected", param_hint="--cases / --split")
+    if resume:
+        from deskrag.core.runio import read_json
+        from deskrag.core.schemas import RunMeta
+
+        run_id = read_json(run_dir / "meta.json", RunMeta).run_id
+    else:
+        run_id = make_run_id(cfg.name, config_hash(cfg))
+    destination = run_dir if run_dir is not None else Path("runs") / run_id
+    system = build_system(cfg, cases=selected)
+    summary = run_cases(
+        run_id,
+        selected,
+        system,
+        destination,
+        reps=reps,
+        config=cfg,
+        dataset_path=str(cases),
+        resume=resume,
+    )
+    typer.echo(f"Run saved: {destination}")
+    typer.echo(f"e2e_pass: {summary.metrics['e2e_pass']}")
+    if summary.counts.errors:
+        typer.echo(f"{summary.counts.errors} unresolved error(s); resume to retry.", err=True)
+        raise typer.Exit(1)
 
 
 @eval_app.command("sweep")
