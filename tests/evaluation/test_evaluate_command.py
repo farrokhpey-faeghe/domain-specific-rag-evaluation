@@ -1,5 +1,6 @@
 """Exercise evaluation through the public CLI without Ollama."""
 
+import re
 from pathlib import Path
 
 from typer.testing import CliRunner
@@ -9,6 +10,7 @@ from deskrag.core.runio import read_json, read_jsonl
 from deskrag.core.schemas import CaseResult, RunMeta, RunSummary
 
 REPO = Path(__file__).resolve().parents[2]
+ANSI_CODE = re.compile(r"\x1b\[[0-9;]*m")
 
 
 def test_cli_writes_complete_run_and_resumes(tmp_path, monkeypatch):
@@ -43,4 +45,5 @@ def test_cli_writes_complete_run_and_resumes(tmp_path, monkeypatch):
 def test_cli_rejects_resume_without_directory():
     result = CliRunner().invoke(app, ["eval", "run", "--resume"])
     assert result.exit_code == 2
-    assert "requires --run-dir" in result.output
+    # On GitHub Actions, Typer colors usage errors, with codes even inside "--run-dir".
+    assert "requires --run-dir" in ANSI_CODE.sub("", result.output)
