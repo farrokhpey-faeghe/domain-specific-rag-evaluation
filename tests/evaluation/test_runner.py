@@ -281,3 +281,202 @@ def test_run_saves_result_before_asking_next_question(
 
     assert summary.counts.errors == 0
     assert summary.counts.ok == 2
+
+
+@pytest.fixture
+def fake_config():
+    from deskrag.core.config import SystemConfig
+
+    return SystemConfig(name="resume-test", system="fake", corpus_dir=str(SAMPLES / "corpus"))
+
+
+def test_resume_skips_completed_repetitions(sample_data, fake_config, tmp_path):
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "resume"
+    run_cases("r", cases[:2], fake, target, reps=2, config=fake_config)
+
+    class MustNotRun:
+        def answer(self, question):
+            raise AssertionError("Completed results must not run again")
+
+    before = (target / "results.jsonl").read_bytes()
+    summary = run_cases(
+        "r", cases[:2], MustNotRun(), target, reps=2, config=fake_config, resume=True
+    )
+    assert (target / "results.jsonl").read_bytes() == before
+    assert len(read_jsonl(target / "results.jsonl", CaseResult)) == 4
+    assert summary.counts.errors == 0
+
+
+def test_resume_retries_errors_and_removes_successes(sample_data, fake_config, tmp_path):
+    from deskrag.core.interfaces import InfraError
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "retry"
+
+    class FailsFirst:
+        def answer(self, question):
+            if question == cases[0].question:
+                raise InfraError("offline")
+            return fake.answer(question)
+
+    run_cases("r", cases[:2], FailsFirst(), target, config=fake_config)
+    summary = run_cases("r", cases[:2], fake, target, config=fake_config, resume=True)
+    assert summary.counts.errors == 0
+    assert summary.metrics["e2e_pass"] == 1.0
+    assert (target / "errors.jsonl").read_text() == ""
+    assert len(read_jsonl(target / "results.jsonl", CaseResult)) == 2
+
+
+def test_resume_preserves_errors_that_fail_again(sample_data, fake_config, tmp_path):
+    from deskrag.core.interfaces import InfraError
+    from deskrag.core.runio import read_jsonl
+    from deskrag.evaluation.runner import run_cases
+
+    cases, _ = sample_data
+    target = tmp_path / "failed"
+
+    class AlwaysFails:
+        def answer(self, question):
+            raise InfraError("offline")
+
+    run_cases("r", cases[:1], AlwaysFails(), target, config=fake_config)
+    summary = run_cases("r", cases[:1], AlwaysFails(), target, config=fake_config, resume=True)
+    errors = read_jsonl(target / "errors.jsonl", ErrorRow)
+    assert len(errors) == 1
+    assert errors[0].attempts == 2
+    assert summary.counts.errors == 1
+    assert summary.metrics["e2e_pass"] is None
+
+
+@pytest.mark.parametrize("change", ["config", "dataset", "reps"])
+def test_resume_rejects_mismatches_without_writing(sample_data, fake_config, tmp_path, change):
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "mismatch"
+    run_cases("r", cases[:2], fake, target, config=fake_config)
+    before = {p.name: p.read_bytes() for p in target.iterdir()}
+    config = fake_config
+    selected = cases[:2]
+    reps = 1
+    if change == "config":
+        config = fake_config.model_copy(update={"prompt_version": "different"})
+    elif change == "dataset":
+        selected = cases[:1]
+    else:
+        reps = 2
+    with pytest.raises(ValueError, match="Cannot resume"):
+        run_cases("r", selected, fake, target, reps=reps, config=config, resume=True)
+    assert before == {p.name: p.read_bytes() for p in target.iterdir()}
+
+
+def test_resume_continues_after_interruption(sample_data, fake_config, tmp_path):
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "interrupted"
+
+    class Interrupted:
+        def answer(self, question):
+            if question == cases[1].question:
+                raise KeyboardInterrupt
+            return fake.answer(question)
+
+    with pytest.raises(KeyboardInterrupt):
+        run_cases("r", cases[:2], Interrupted(), target, config=fake_config)
+    summary = run_cases("r", cases[:2], fake, target, config=fake_config, resume=True)
+    assert summary.counts.ok == 2
+    assert summary.counts.errors == 0
+
+
+def test_resume_refuses_legacy_directory_without_metadata(sample_data, fake_config, tmp_path):
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "legacy"
+    run_cases("r", cases[:1], fake, target)
+    with pytest.raises(ValueError, match="without meta.json"):
+        run_cases("r", cases[:1], fake, target, config=fake_config, resume=True)
+
+
+@pytest.mark.parametrize("error_type", [KeyError, RuntimeError])
+def test_scoring_bugs_propagate_without_system_error_rows(
+    sample_data, tmp_path, monkeypatch, error_type
+):
+    from deskrag.evaluation.metrics import answer
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "scorer-bug"
+    original = answer.score_case
+    calls = []
+
+    def broken_score(case, response):
+        calls.append(case.case_id)
+        if len(calls) == 2:
+            raise error_type("scorer bug")
+        return original(case, response)
+
+    monkeypatch.setattr(answer, "score_case", broken_score)
+    with pytest.raises(error_type, match="scorer bug"):
+        run_cases("r", cases, fake, target)
+
+    assert calls == [cases[0].case_id, cases[1].case_id]
+    assert (target / "errors.jsonl").read_text() == ""
+    from deskrag.core.runio import read_jsonl
+    from deskrag.core.schemas import CaseResult
+
+    saved = read_jsonl(target / "results.jsonl", CaseResult)
+    assert len(saved) == 1
+    assert saved[0].case_id == cases[0].case_id
+
+
+def test_unexpected_system_exception_is_still_logged(sample_data, tmp_path):
+    from deskrag.core.runio import read_jsonl
+    from deskrag.evaluation.runner import run_cases
+
+    cases, _ = sample_data
+    target = tmp_path / "system-bug"
+
+    class BrokenSystem:
+        def answer(self, question):
+            raise RuntimeError("system failure")
+
+    summary = run_cases("r", cases[:1], BrokenSystem(), target)
+    errors = read_jsonl(target / "errors.jsonl", ErrorRow)
+    assert summary.counts.errors == 1
+    assert len(errors) == 1
+    assert errors[0].error_class == "exception"
+    assert "system failure" in errors[0].message
+
+
+def test_metadata_and_case_type_breakdown(sample_data, fake_config, tmp_path):
+    from deskrag.core.config import config_hash
+    from deskrag.core.dataset import dataset_sha256
+    from deskrag.core.runio import read_json
+    from deskrag.core.schemas import RunMeta
+    from deskrag.evaluation.runner import run_cases
+
+    cases, fake = sample_data
+    target = tmp_path / "metadata"
+    summary = run_cases(
+        "r", cases, fake, target, config=fake_config, dataset_path=str(SAMPLES / "cases.jsonl")
+    )
+    meta = read_json(target / "meta.json", RunMeta)
+    assert meta.config_hash == config_hash(fake_config)
+    assert meta.dataset.sha256 == dataset_sha256(cases)
+    assert meta.dataset.n_cases == 10
+    assert meta.corpus.n_docs == 5
+    assert meta.env.python
+    assert meta.env.model_digests == {}
+    assert summary.by_case_type["single_doc"]["e2e_pass"] == pytest.approx(0.5)
+    assert summary.by_case_type["multi_doc"]["fact_recall"] == 0.5
+    assert summary.by_case_type["out_of_domain"]["e2e_pass"] == 1.0
