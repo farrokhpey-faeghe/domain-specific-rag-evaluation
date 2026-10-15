@@ -182,3 +182,29 @@ def test_env_fingerprint_records_the_version_and_every_model_used():
     env = env_fingerprint(cfg, client=OllamaClient("llama3.2:3b", client=stub))
     assert env.ollama_version == "0.40.3"
     assert env.model_digests == {"llama3.2:3b": "a80c", "nomic-embed-text": "0a10"}
+
+
+def test_env_fingerprint_leaves_ollama_alone_for_a_bm25_retrieval_only_run():
+    # The CI retrieval gate runs one of these on a runner with no Ollama. The config still has
+    # an LLM, but a retrieval-only run never calls it.
+    cfg = SystemConfig(
+        name="x", system="rag", llm={"model": "llama3.2:3b"}, retrieval={"method": "bm25"}
+    )
+    env = env_fingerprint(cfg, client=NoOllama(), retrieval_only=True)
+    assert env.ollama_version is None
+    assert env.model_digests == {}
+
+
+def test_env_fingerprint_records_only_the_embedding_model_for_a_retrieval_only_run():
+    stub = StubOllama(models=[("llama3.2:3b", "a80c"), ("nomic-embed-text:latest", "0a10")])
+    cfg = SystemConfig(
+        name="x",
+        system="rag",
+        llm={"model": "llama3.2:3b"},
+        retrieval={"method": "hybrid", "embed_model": "nomic-embed-text"},
+    )
+    env = env_fingerprint(
+        cfg, client=OllamaClient("nomic-embed-text", client=stub), retrieval_only=True
+    )
+    assert env.ollama_version == "0.40.3"
+    assert env.model_digests == {"nomic-embed-text": "0a10"}
