@@ -1,13 +1,18 @@
+from pathlib import Path
+
 from deskrag.core.config import RetrievalConfig, SystemConfig
 from deskrag.core.interfaces import Retriever
 from deskrag.rag.retrieval import build_retriever
+
+REPO = Path(__file__).resolve().parents[1]
+CORPUS = str(REPO / "data" / "samples" / "corpus")
 
 
 def make_config(method: str) -> SystemConfig:
     return SystemConfig(
         name="t",
         system="fake",
-        corpus_dir="data/samples/corpus",
+        corpus_dir=CORPUS,
         retrieval=RetrievalConfig(method=method),
     )
 
