@@ -53,6 +53,8 @@ It is off by default for two reasons. `deskrag eval run --reps 3` measures run-t
 
 `env_fingerprint(cfg) -> EnvFingerprint` is `core.env.basic_fingerprint()` plus `ollama_version` and `model_digests` for the models the config uses: `llm.model`, plus `retrieval.embed_model` for `dense` and `hybrid`. For `fake` and the sanity systems it doesn't contact Ollama at all.
 
+For `eval run --retrieval-only`, call `env_fingerprint(cfg, retrieval_only=True)`. The LLM is never called in that mode, so it is left out of `model_digests`. A BM25 run then doesn't contact Ollama either, which the CI retrieval gate needs because the GitHub runner has no Ollama. Dense and hybrid still record the embedding model.
+
 Official runs happen on one reference machine (`DESKRAG_MACHINE=reference`) with one Ollama server setup. Server settings such as flash attention or KV-cache quantization can change outputs, so keep them the same between a baseline and the runs compared against it.
 
 ## `deskrag ask`
